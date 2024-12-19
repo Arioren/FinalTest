@@ -1,4 +1,5 @@
 from sqlalchemy import func
+import pandas as pd
 from app.db.database import session_maker
 from app.db.model import Event, Casualties, AttackType, Region, Location
 
@@ -81,4 +82,38 @@ def most_active_gangs_by_region(region_name=None):
             data[region].append({"gang_name": gang, "event_count": count})
 
         return data
+
+
+
+def percentage_change_attacks_by_region(filter_option="Top 5"):
+    with session_maker() as session:
+        query = (
+            session.query(
+                Region.name.label("region_name"),
+                Event.year.label("year"),
+                func.count(Event.id).label("attack_count")
+            )
+            .join(Location, Event.location_id == Location.id)
+            .join(Region, Location.region_id == Region.id)
+            .group_by(Region.name, Event.year)
+            .order_by(Region.name, Event.year)
+        )
+
+        result = query.all()
+
+        df = pd.DataFrame(result, columns=["region_name", "year", "attack_count"])
+
+        df["percentage_change"] = (
+            df.groupby("region_name")["attack_count"]
+            .pct_change() * 100
+        )
+
+        df = df.dropna()
+
+        if filter_option == "Top 5":
+            top_regions = df.groupby("region_name")["percentage_change"].max().nlargest(5).index
+            df = df[df["region_name"].isin(top_regions)]
+
+        return df
+
 

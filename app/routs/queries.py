@@ -34,3 +34,17 @@ def get_most_active_gangs_by_region():
 def get_most_active_gangs_by_region(region_name):
     res = repo.most_active_gangs_by_region(region_name)
     return jsonify(res)
+
+
+@terror_bluprint.route('/percentage_change_attacks_by_region', methods=['GET'])
+def get_percentage_change_attacks_by_region():
+    res = repo.percentage_change_attacks_by_region("All")
+    res = res.to_dict(orient="records")
+    return jsonify(res)
+
+
+@terror_bluprint.route('/percentage_change_attacks_by_region/top5', methods=['GET'])
+def get_percentage_change_attacks_by_region():
+    res = repo.percentage_change_attacks_by_region("Top 5")
+    res = res.to_dict(orient="records")
+    return jsonify(res)
