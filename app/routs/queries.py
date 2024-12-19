@@ -9,5 +9,10 @@ terror_bluprint = Blueprint('terror', __name__)
 # a. Filter option by -5Top or All
 @terror_bluprint.route('/deadliest_attack_types', methods=['GET'])
 def get_deadliest_attack_types():
+    res = repo.deadliest_attack_types("All")
+    return jsonify(res)
+
+@terror_bluprint.route('/deadliest_attack_types/top5', methods=['GET'])
+def get_deadliest_attack_types():
     res = repo.deadliest_attack_types()
     return jsonify(res)
