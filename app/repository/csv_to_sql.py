@@ -1,91 +1,117 @@
 from app.db.database import session_maker, engine
 from app.db.model import TargetType, AttackType, Country, Region, City, Location, Casualties, Event, Base
+import csv
 
 
 def read_csv_data(file_path):
     Base.metadata.drop_all(bind=engine)
     Base.metadata.create_all(bind=engine)
-    with session_maker() as session:
-        with open(file_path, 'r', encoding='iso-8859-1') as file:
-            for line in file.readlines()[1:]:
-                data = line.split(',')
-                target_type = session.query(TargetType).filter(TargetType.name == data[35]).first()
-                if not target_type:
-                    target_type = TargetType(name=data[35])
-                    session.add(target_type)
+
+    target_cache = {}
+    attack_cache = {}
+    region_cache = {}
+    country_cache = {}
+    city_cache = {}
+    location_cache = {}
+
+    with open(file_path, 'r', encoding='iso-8859-1') as file:
+        reader = csv.reader(file)
+        next(reader)
+
+        events = []
+
+        with session_maker() as session:
+            for i, line in enumerate(reader):
+                target_name = line[35]
+                attack_name = line[29]
+                region_name = line[10]
+                country_name = line[8]
+                city_name = line[12]
+                latitude = float(line[13]) if line[13] else None
+                longitude = float(line[14]) if line[14] else None
+                killed = float(line[98]) if line[98] else 0
+                wounded = float(line[99]) if line[99] else 0
+                year, month, day = line[1], line[2], line[3]
+                gang_name = line[58]
+                total_terrorists = int(line[69]) if line[69] else None
+
+                if target_name not in target_cache:
+                    target = TargetType(name=target_name)
+                    session.add(target)
                     session.commit()
-                    session.refresh(target_type)
-                attack_type = session.query(AttackType).filter(AttackType.name == data[29]).first()
-                if not attack_type:
-                    attack_type = AttackType(name=data[29])
-                    session.add(attack_type)
+                    session.refresh(target)
+                    target_cache[target_name] = target.id
+
+                if attack_name not in attack_cache:
+                    attack = AttackType(name=attack_name)
+                    session.add(attack)
                     session.commit()
-                    session.refresh(attack_type)
-                region = session.query(Region).filter(Region.name == data[10]).first()
-                if not region:
-                    region = Region(name=data[10])
+                    session.refresh(attack)
+                    attack_cache[attack_name] = attack.id
+
+                if region_name not in region_cache:
+                    region = Region(name=region_name)
                     session.add(region)
                     session.commit()
                     session.refresh(region)
-                country = session.query(Country).filter(Country.name == data[8]).first()
-                if not country:
-                    country = Country(name=data[8], region_id=region.id)
+                    region_cache[region_name] = region.id
+
+
+                if country_name not in country_cache:
+                    country = Country(name=country_name, region_id=region_cache[region_name])
                     session.add(country)
                     session.commit()
                     session.refresh(country)
-                city = session.query(City).filter(City.name == data[12]).first()
-                if not city:
-                    city = City(name=data[12], country_id=country.id)
+                    country_cache[country_name] = country.id
+
+                city_key = (country_name, city_name)
+                if city_key not in city_cache:
+                    city = City(name=city_name, country_id=country_cache[country_name])
                     session.add(city)
                     session.commit()
                     session.refresh(city)
-                try:
-                    data[13] = float(data[13])
-                except ValueError:
-                    data[13] = None
-                try:
-                    data[14] = float(data[14])
-                except ValueError:
-                    data[14] = None
-                location = session.query(Location).filter(Location.latitude == data[13], Location.longitude == data[14]).first()
-                if not location:
-                    location = Location(latitude=data[13], longitude=data[14], country_id=country.id, city_id=city.id, region_id=region.id)
+                    city_cache[city_key] = city.id
+
+                location_key = (latitude, longitude)
+                if location_key not in location_cache:
+                    location = Location(
+                        latitude=latitude,
+                        longitude=longitude,
+                        country_id=country_cache[country_name],
+                        city_id=city_cache[city_key],
+                        region_id=region_cache[region_name],
+                    )
                     session.add(location)
                     session.commit()
                     session.refresh(location)
-                try:
-                    casualties = Casualties(killed=float(data[98]))
-                except ValueError:
-                    casualties = Casualties(killed=0)
-                try:
-                    casualties.wounded = float(data[99])
-                except ValueError:
-                    casualties.wounded = 0
+                    location_cache[location_key] = location.id
 
+                casualties = Casualties(killed=killed, wounded=wounded)
                 session.add(casualties)
                 session.commit()
-                session.refresh(casualties)
-                try:
-                    data[69] = int(data[69])
-                except ValueError:
-                    data[69] = None
-                event = Event(location_id=location.id,
-                              year=data[1],
-                              month=data[2],
-                              day=data[3],
-                              gang_name=data[58],
-                              total_terrorists=data[69],
-                              attack_type_id=attack_type.id,
-                              target_type_id=target_type.id,
-                              casualties_id=casualties.id)
-                session.add(event)
-                session.commit()
 
 
+                event = Event(
+                    location_id=location_cache[location_key],
+                    year=year,
+                    month=month,
+                    day=day,
+                    gang_name=gang_name,
+                    total_terrorists=total_terrorists,
+                    attack_type_id=attack_cache[attack_name],
+                    target_type_id=target_cache[target_name],
+                    casualties_id=casualties.id,
+                )
+                events.append(event)
+                if i % 500 == 0:
+                    print(f"Processed {i} rows")
+                    session.bulk_save_objects(events)
+                    session.commit()
+                    events = []
+
+            session.bulk_save_objects(events)
+            session.commit()
 
 
-
-
-                
-
-
+if __name__ == '__main__':
+    read_csv_data(r'C:\Users\ARI\PycharmProjects\FinalTest\data\globalterrorismdb_0718dist.csv')

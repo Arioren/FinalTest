@@ -3,7 +3,7 @@ import pandas as pd
 from app.db.database import session_maker
 from app.db.model import Event, Casualties, AttackType, Region, Location
 
-#1
+# 1
 def deadliest_attack_types(filter_option="Top 5"):
     with session_maker() as session:
         query = (
@@ -26,7 +26,7 @@ def deadliest_attack_types(filter_option="Top 5"):
         return [{"name": row[1], "score": row[2]} for row in result]
 
 
-#2
+# 2
 def average_casualties_by_region(filter_option="Top 5"):
     with session_maker() as session:
         query = (
@@ -50,7 +50,7 @@ def average_casualties_by_region(filter_option="Top 5"):
         return [{"region": row[1], "average_casualties": float(row[2])} for row in result]
 
 
-#8
+# 8
 def most_active_gangs_by_region(region_name=None):
     with session_maker() as session:
         query = (
@@ -84,7 +84,7 @@ def most_active_gangs_by_region(region_name=None):
         return data
 
 
-#6
+# 6
 def percentage_change_attacks_by_region(filter_option="Top 5"):
     with session_maker() as session:
         query = (
@@ -116,7 +116,7 @@ def percentage_change_attacks_by_region(filter_option="Top 5"):
 
         return df
 
-
+# 9
 def correlation_between_terrorists_and_kills():
     with session_maker() as session:
         query = (
@@ -136,7 +136,5 @@ def correlation_between_terrorists_and_kills():
 
         return correlation
 
-
-print(correlation_between_terrorists_and_kills())
 
 
