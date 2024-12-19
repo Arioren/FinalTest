@@ -23,3 +23,14 @@ def get_average_casualties_by_region():
 def get_average_casualties_by_region():
     res = repo.average_casualties_by_region("Top 5")
     return jsonify(res)
+
+
+@terror_bluprint.route('/most_active_gangs_by_region', methods=['GET'])
+def get_most_active_gangs_by_region():
+    res = repo.most_active_gangs_by_region(None)
+    return jsonify(res)
+
+@terror_bluprint.route('/most_active_gangs_by_region/<region_name>', methods=['GET'])
+def get_most_active_gangs_by_region(region_name):
+    res = repo.most_active_gangs_by_region(region_name)
+    return jsonify(res)

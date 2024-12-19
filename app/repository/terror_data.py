@@ -1,7 +1,3 @@
-# 1. The deadliest attack types. "Deadliest" =
-# the types with the highest number of casualties,
-# killed and injured, where a casualty = 1 point and a kill is worth 2 points for
-# the calculation. a. Filter option by -5Top or All
 from sqlalchemy import func
 from app.db.database import session_maker
 from app.db.model import Event, Casualties, AttackType, Region, Location
@@ -51,3 +47,38 @@ def average_casualties_by_region(filter_option="Top 5"):
         result = query.all()
 
         return [{"region": row[1], "average_casualties": float(row[2])} for row in result]
+
+
+
+def most_active_gangs_by_region(region_name=None):
+    with session_maker() as session:
+        query = (
+            session.query(
+                Region.name.label("region_name"),
+                Event.gang_name.label("gang_name"),
+                func.count(Event.id).label("event_count")
+            )
+            .join(Location, Event.location_id == Location.id)
+            .join(Region, Location.region_id == Region.id)
+            .group_by(Region.name, Event.gang_name)
+            .order_by(func.count(Event.id).desc())
+        )
+
+        if region_name:
+            query = query.filter(Region.name == region_name)
+
+        result = query.all()
+
+        data = {}
+        for row in result:
+            if row[1] is None or row[1] == "Unknown" or row[1] == "":
+                continue
+            region = row[0]
+            gang = row[1]
+            count = row[2]
+            if region not in data:
+                data[region] = []
+            data[region].append({"gang_name": gang, "event_count": count})
+
+        return data
+
