@@ -48,3 +48,9 @@ def get_percentage_change_attacks_by_region():
     res = repo.percentage_change_attacks_by_region("Top 5")
     res = res.to_dict(orient="records")
     return jsonify(res)
+
+
+@terror_bluprint.route('/correlation_between_terrorists_and_kills', methods=['GET'])
+def get_correlation_between_terrorists_and_kills():
+    res = repo.correlation_between_terrorists_and_kills()
+    return jsonify(res)

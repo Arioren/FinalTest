@@ -65,12 +65,16 @@ def read_csv_data(file_path):
                 session.add(casualties)
                 session.commit()
                 session.refresh(casualties)
-
+                try:
+                    data[69] = int(data[69])
+                except ValueError:
+                    data[69] = None
                 event = Event(location_id=location.id,
                               year=data[1],
                               month=data[2],
                               day=data[3],
                               gang_name=data[58],
+                              total_terrorists=data[69],
                               attack_type_id=attack_type.id,
                               target_type_id=target_type.id,
                               casualties_id=casualties.id)

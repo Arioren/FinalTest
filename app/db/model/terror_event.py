@@ -10,6 +10,7 @@ class Event(Base):
     month = Column(Integer, nullable=True)
     day = Column(Integer, nullable=True)
     gang_name = Column(String, nullable=True)
+    total_terrorists = Column(Integer, nullable=True)
     attack_type_id = Column(Integer, ForeignKey('attack_types.id'), nullable=False)
     target_type_id = Column(Integer, ForeignKey('target_types.id'), nullable=False)
     casualties_id = Column(Integer, ForeignKey('casualties.id'), nullable=False)
