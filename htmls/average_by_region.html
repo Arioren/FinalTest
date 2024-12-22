@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ee329957ecb0e3d811b3105db1f89db5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ee329957ecb0e3d811b3105db1f89db5" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ee329957ecb0e3d811b3105db1f89db5 = L.map(
+                "map_ee329957ecb0e3d811b3105db1f89db5",
+                {
+                    center: [0.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_aca12e340193cc2ec147d3ef66bfdbd7 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_aca12e340193cc2ec147d3ef66bfdbd7.addTo(map_ee329957ecb0e3d811b3105db1f89db5);
+        
+    
+            var marker_7b0c89db5392b3247661bf9cdd76f3f7 = L.marker(
+                [0.4619517578953328, 25.95664778864439],
+                {
+}
+            ).addTo(map_ee329957ecb0e3d811b3105db1f89db5);
+        
+    
+            var icon_03816e0ae2c0481809faf77223c9bb12 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7b0c89db5392b3247661bf9cdd76f3f7.setIcon(icon_03816e0ae2c0481809faf77223c9bb12);
+        
+    
+            marker_7b0c89db5392b3247661bf9cdd76f3f7.bindTooltip(
+                `<div>
+                     Region: Sub-Saharan Africa<br>Average Casualties: 8.49
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e6cceecd12d66d5894d466211213559e = L.marker(
+                [32.74633476474563, 38.6482393937741],
+                {
+}
+            ).addTo(map_ee329957ecb0e3d811b3105db1f89db5);
+        
+    
+            var icon_cc14950d363b1e73174112c51b4b6430 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e6cceecd12d66d5894d466211213559e.setIcon(icon_cc14950d363b1e73174112c51b4b6430);
+        
+    
+            marker_e6cceecd12d66d5894d466211213559e.bindTooltip(
+                `<div>
+                     Region: Middle East & North Africa<br>Average Casualties: 6.02
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2a4db6cfd0f6f84a4d88a0032d340993 = L.marker(
+                [13.967763972352342, -9252.484168264207],
+                {
+}
+            ).addTo(map_ee329957ecb0e3d811b3105db1f89db5);
+        
+    
+            var icon_2966ff3ddbeff6ac2a84ac1b456c1ed8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkorange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_2a4db6cfd0f6f84a4d88a0032d340993.setIcon(icon_2966ff3ddbeff6ac2a84ac1b456c1ed8);
+        
+    
+            marker_2a4db6cfd0f6f84a4d88a0032d340993.bindTooltip(
+                `<div>
+                     Region: Central America & Caribbean<br>Average Casualties: 5.25
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2d69b8f6ec7c662a825efaa300e2952f = L.marker(
+                [28.379443212336454, 74.2127432131792],
+                {
+}
+            ).addTo(map_ee329957ecb0e3d811b3105db1f89db5);
+        
+    
+            var icon_531be14f60409bc1fdb0a883c866a493 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkorange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_2d69b8f6ec7c662a825efaa300e2952f.setIcon(icon_531be14f60409bc1fdb0a883c866a493);
+        
+    
+            marker_2d69b8f6ec7c662a825efaa300e2952f.bindTooltip(
+                `<div>
+                     Region: South Asia<br>Average Casualties: 4.61
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a36932cc77390bb4c45ea6e04f52d6f2 = L.marker(
+                [34.47414278428614, -92.59999304984552],
+                {
+}
+            ).addTo(map_ee329957ecb0e3d811b3105db1f89db5);
+        
+    
+            var icon_aefeb5880eced1f14501237806b7e03e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a36932cc77390bb4c45ea6e04f52d6f2.setIcon(icon_aefeb5880eced1f14501237806b7e03e);
+        
+    
+            marker_a36932cc77390bb4c45ea6e04f52d6f2.bindTooltip(
+                `<div>
+                     Region: North America<br>Average Casualties: 3.76
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>

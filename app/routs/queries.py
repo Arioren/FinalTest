@@ -1,6 +1,9 @@
+import webbrowser
+
 from flask import Blueprint, jsonify
 
 import app.repository.terror_data as repo
+from app.service.maps import map_of_average_casualties
 
 terror_bluprint = Blueprint('terror', __name__)
 
@@ -17,11 +20,15 @@ def get_deadliest_attack_types_top5():
 @terror_bluprint.route('/average_casualties_by_region', methods=['GET'])
 def get_average_casualties_by_region():
     res = repo.average_casualties_by_region("All")
+    map_of_average_casualties(res)
+    webbrowser.open(r'C:\Users\ARI\PycharmProjects\FinalTest\htmls\average_by_region.html')
     return jsonify(res)
 
 @terror_bluprint.route('/average_casualties_by_region/top5', methods=['GET'])
 def get_average_casualties_by_region_top5():
     res = repo.average_casualties_by_region("Top 5")
+    map_of_average_casualties(res)
+    webbrowser.open(r'C:\Users\ARI\PycharmProjects\FinalTest\htmls\average_by_region.html')
     return jsonify(res)
 
 

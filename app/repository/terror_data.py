@@ -33,6 +33,8 @@ def average_casualties_by_region(filter_option="Top 5"):
             session.query(
                 Region.id,
                 Region.name,
+                func.avg(Location.latitude).label("latitude"),
+                func.avg(Location.longitude).label("longitude"),
                 func.avg(Casualties.killed * 2 + Casualties.wounded).label("average_casualties")
             )
             .join(Location, Region.id == Location.region_id)
@@ -47,7 +49,15 @@ def average_casualties_by_region(filter_option="Top 5"):
 
         result = query.all()
 
-        return [{"region": row[1], "average_casualties": float(row[2])} for row in result]
+        return [
+            {
+                "region": row[1],
+                "average_casualties": float(row[4]),
+                "latitude": float(row[2]),
+                "longitude": float(row[3]),
+            }
+            for row in result
+        ]
 
 
 # 8
