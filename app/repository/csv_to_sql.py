@@ -29,11 +29,11 @@ def read_csv_data(file_path):
                 city_name = line[12]
                 latitude = float(line[13]) if line[13] else None
                 longitude = float(line[14]) if line[14] else None
-                killed = float(line[98]) if line[98] else 0
-                wounded = float(line[99]) if line[99] else 0
+                killed = int(float(line[98])) if line[98] and int(float(line[98])) >= 0 else None
+                wounded = int(float(line[99])) if line[99] and int(float(line[99])) >= 0 else None
                 year, month, day = line[1], line[2], line[3]
                 gang_name = line[58]
-                total_terrorists = int(line[69]) if line[69] else None
+                total_terrorists = int(float(line[69])) if line[69] and int(float(line[69])) >= 0 else None
 
                 if target_name not in target_cache:
                     target = TargetType(name=target_name)
@@ -114,4 +114,4 @@ def read_csv_data(file_path):
 
 
 if __name__ == '__main__':
-    read_csv_data(r'C:\Users\ARI\PycharmProjects\FinalTest\data\globalterrorismdb_0718dist.csv')
+    read_csv_data(r'C:\Users\ARI\PycharmProjects\FinalTest\data\merge.csv')

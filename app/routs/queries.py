@@ -10,7 +10,7 @@ def get_deadliest_attack_types():
     return jsonify(res)
 
 @terror_bluprint.route('/deadliest_attack_types/top5', methods=['GET'])
-def get_deadliest_attack_types():
+def get_deadliest_attack_types_top5():
     res = repo.deadliest_attack_types()
     return jsonify(res)
 
@@ -20,7 +20,7 @@ def get_average_casualties_by_region():
     return jsonify(res)
 
 @terror_bluprint.route('/average_casualties_by_region/top5', methods=['GET'])
-def get_average_casualties_by_region():
+def get_average_casualties_by_region_top5():
     res = repo.average_casualties_by_region("Top 5")
     return jsonify(res)
 
@@ -31,7 +31,7 @@ def get_most_active_gangs_by_region():
     return jsonify(res)
 
 @terror_bluprint.route('/most_active_gangs_by_region/<region_name>', methods=['GET'])
-def get_most_active_gangs_by_region(region_name):
+def get_most_active_gangs_by_specific_region(region_name):
     res = repo.most_active_gangs_by_region(region_name)
     return jsonify(res)
 
@@ -44,7 +44,7 @@ def get_percentage_change_attacks_by_region():
 
 
 @terror_bluprint.route('/percentage_change_attacks_by_region/top5', methods=['GET'])
-def get_percentage_change_attacks_by_region():
+def get_percentage_change_attacks_by_region_top5():
     res = repo.percentage_change_attacks_by_region("Top 5")
     res = res.to_dict(orient="records")
     return jsonify(res)

@@ -122,7 +122,7 @@ def correlation_between_terrorists_and_kills():
         query = (
             session.query(
                 Event.total_terrorists,
-                func.sum(Casualties.killed).label("total_kills")
+                func.avg(Casualties.killed).label("total_kills")
             )
             .join(Casualties, Event.casualties_id == Casualties.id)
             .group_by(Event.total_terrorists)
