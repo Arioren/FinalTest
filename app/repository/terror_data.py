@@ -101,7 +101,9 @@ def percentage_change_attacks_by_region(filter_option="Top 5"):
             session.query(
                 Region.name.label("region_name"),
                 Event.year.label("year"),
-                func.count(Event.id).label("attack_count")
+                func.count(Event.id).label("attack_count"),
+                func.avg(Location.latitude).label("latitude"),
+                func.avg(Location.longitude).label("longitude")
             )
             .join(Location, Event.location_id == Location.id)
             .join(Region, Location.region_id == Region.id)
@@ -111,7 +113,7 @@ def percentage_change_attacks_by_region(filter_option="Top 5"):
 
         result = query.all()
 
-        df = pd.DataFrame(result, columns=["region_name", "year", "attack_count"])
+        df = pd.DataFrame(result, columns=["region_name", "year", "attack_count", "latitude", "longitude"])
 
         df["percentage_change"] = (
             df.groupby("region_name")["attack_count"]

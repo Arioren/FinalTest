@@ -1,11 +1,14 @@
 import webbrowser
 
-from flask import Blueprint, jsonify
+from flask import Blueprint, jsonify, render_template
 
 import app.repository.terror_data as repo
-from app.service.maps import map_of_average_casualties
+from app.service.maps import map_of_average_casualties, display_percentage_change_on_map
 
 terror_bluprint = Blueprint('terror', __name__)
+@terror_bluprint.route("/", methods=['GET'])
+def index():
+    return render_template("htmls/index.html")
 
 @terror_bluprint.route('/deadliest_attack_types', methods=['GET'])
 def get_deadliest_attack_types():
@@ -21,14 +24,14 @@ def get_deadliest_attack_types_top5():
 def get_average_casualties_by_region():
     res = repo.average_casualties_by_region("All")
     map_of_average_casualties(res)
-    webbrowser.open(r'C:\Users\ARI\PycharmProjects\FinalTest\htmls\average_by_region.html')
+    webbrowser.open(r'C:\Users\ARI\PycharmProjects\FinalTest\htmls\map.html')
     return jsonify(res)
 
 @terror_bluprint.route('/average_casualties_by_region/top5', methods=['GET'])
 def get_average_casualties_by_region_top5():
     res = repo.average_casualties_by_region("Top 5")
     map_of_average_casualties(res)
-    webbrowser.open(r'C:\Users\ARI\PycharmProjects\FinalTest\htmls\average_by_region.html')
+    webbrowser.open(r'C:\Users\ARI\PycharmProjects\FinalTest\htmls\map.html')
     return jsonify(res)
 
 
@@ -46,6 +49,8 @@ def get_most_active_gangs_by_specific_region(region_name):
 @terror_bluprint.route('/percentage_change_attacks_by_region', methods=['GET'])
 def get_percentage_change_attacks_by_region():
     res = repo.percentage_change_attacks_by_region("All")
+    display_percentage_change_on_map(res)
+    webbrowser.open(r'C:\Users\ARI\PycharmProjects\FinalTest\htmls\map.html')
     res = res.to_dict(orient="records")
     return jsonify(res)
 
@@ -53,6 +58,8 @@ def get_percentage_change_attacks_by_region():
 @terror_bluprint.route('/percentage_change_attacks_by_region/top5', methods=['GET'])
 def get_percentage_change_attacks_by_region_top5():
     res = repo.percentage_change_attacks_by_region("Top 5")
+    display_percentage_change_on_map(res)
+    webbrowser.open(r'C:\Users\ARI\PycharmProjects\FinalTest\htmls\map.html')
     res = res.to_dict(orient="records")
     return jsonify(res)
 

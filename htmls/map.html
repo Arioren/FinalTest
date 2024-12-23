@@ -1,0 +1,5799 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_cf7ea63140f24178d924518a03262791 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_cf7ea63140f24178d924518a03262791" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_cf7ea63140f24178d924518a03262791 = L.map(
+                "map_cf7ea63140f24178d924518a03262791",
+                {
+                    center: [16.959265135126735, -407.8249916513393],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_daaa8515062122b948777ec085855eaa = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_daaa8515062122b948777ec085855eaa.addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var marker_534b5c5582f1b36ac40c5176c49d8b02 = L.marker(
+                [-33.873651, 151.20689],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_5515cd860a1b142119eeee2209088331 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_534b5c5582f1b36ac40c5176c49d8b02.setIcon(icon_5515cd860a1b142119eeee2209088331);
+        
+    
+            marker_534b5c5582f1b36ac40c5176c49d8b02.bindTooltip(
+                `<div>
+                     Region: Australasia & Oceania<br>Year: 1971<br>Percentage Change: 0.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_66d984e88b02febe1d6d616cffb256c7 = L.marker(
+                [-29.603562, 152.41876633333334],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_64bb33a03578b7168ee1bd7016902cd4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_66d984e88b02febe1d6d616cffb256c7.setIcon(icon_64bb33a03578b7168ee1bd7016902cd4);
+        
+    
+            marker_66d984e88b02febe1d6d616cffb256c7.bindTooltip(
+                `<div>
+                     Region: Australasia & Oceania<br>Year: 1972<br>Percentage Change: 200.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_bea184f118f1678cffa5dd8e4dc4b3e6 = L.marker(
+                [-43.532054, 172.636225],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_f71c67d0bb99e1bead27e2c000d5ac4d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_bea184f118f1678cffa5dd8e4dc4b3e6.setIcon(icon_f71c67d0bb99e1bead27e2c000d5ac4d);
+        
+    
+            marker_bea184f118f1678cffa5dd8e4dc4b3e6.bindTooltip(
+                `<div>
+                     Region: Australasia & Oceania<br>Year: 1973<br>Percentage Change: -66.67%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_077691ef117ca1466624c88e220d423d = L.marker(
+                [-33.873651, 151.20689],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_0a1389aebc50ba685a245a0a126ab4fa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_077691ef117ca1466624c88e220d423d.setIcon(icon_0a1389aebc50ba685a245a0a126ab4fa);
+        
+    
+            marker_077691ef117ca1466624c88e220d423d.bindTooltip(
+                `<div>
+                     Region: Australasia & Oceania<br>Year: 1974<br>Percentage Change: 0.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_69ff34d8d5da09d168d52c7d9deab5b1 = L.marker(
+                [-33.873651, 151.20689],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_f48e34cb0b97fa80326c4257f094840d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_69ff34d8d5da09d168d52c7d9deab5b1.setIcon(icon_f48e34cb0b97fa80326c4257f094840d);
+        
+    
+            marker_69ff34d8d5da09d168d52c7d9deab5b1.bindTooltip(
+                `<div>
+                     Region: Australasia & Oceania<br>Year: 1978<br>Percentage Change: 100.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_42a137de1ae66286e0703441286be3a2 = L.marker(
+                [-33.630545, 132.4907815],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_5295ac9bc2cf5f6228158ec190b6b844 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_42a137de1ae66286e0703441286be3a2.setIcon(icon_5295ac9bc2cf5f6228158ec190b6b844);
+        
+    
+            marker_42a137de1ae66286e0703441286be3a2.bindTooltip(
+                `<div>
+                     Region: Australasia & Oceania<br>Year: 1979<br>Percentage Change: 0.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_fd6fb07ddc977370742d85a5307f0b4d = L.marker(
+                [-31.508108285714286, 153.6123162857143],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_b0b895339f69ecd80b3f8deb77b7c928 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_fd6fb07ddc977370742d85a5307f0b4d.setIcon(icon_b0b895339f69ecd80b3f8deb77b7c928);
+        
+    
+            marker_fd6fb07ddc977370742d85a5307f0b4d.bindTooltip(
+                `<div>
+                     Region: Australasia & Oceania<br>Year: 1980<br>Percentage Change: 250.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_023175aa1c878d1a24fd8675f7ff5bd2 = L.marker(
+                [-40.312586333333336, 165.49311333333333],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_a0eae65f8f7b34b57e4c478d29b0527e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_023175aa1c878d1a24fd8675f7ff5bd2.setIcon(icon_a0eae65f8f7b34b57e4c478d29b0527e);
+        
+    
+            marker_023175aa1c878d1a24fd8675f7ff5bd2.bindTooltip(
+                `<div>
+                     Region: Australasia & Oceania<br>Year: 1981<br>Percentage Change: -57.14%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8f70ded2d17cf1cd5283059e802248ac = L.marker(
+                [-33.873651, 151.20689],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_1dcfd4eb7a6db959ee9046151d6a0f32 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_8f70ded2d17cf1cd5283059e802248ac.setIcon(icon_1dcfd4eb7a6db959ee9046151d6a0f32);
+        
+    
+            marker_8f70ded2d17cf1cd5283059e802248ac.bindTooltip(
+                `<div>
+                     Region: Australasia & Oceania<br>Year: 1982<br>Percentage Change: 33.33%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e6c66655e9d223e7a31a0e35ef35acc1 = L.marker(
+                [-23.477910090909095, 166.6085152727273],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_9bdd01e6e1c7a0817dba4db821091ddd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e6c66655e9d223e7a31a0e35ef35acc1.setIcon(icon_9bdd01e6e1c7a0817dba4db821091ddd);
+        
+    
+            marker_e6c66655e9d223e7a31a0e35ef35acc1.bindTooltip(
+                `<div>
+                     Region: Australasia & Oceania<br>Year: 1984<br>Percentage Change: 175.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_47ebd8b98309527077e6416e23b4ed36 = L.marker(
+                [-22.180228571428575, 166.42322799999997],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_d4c6b2e780d6afdf3dc4e592f6076986 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_47ebd8b98309527077e6416e23b4ed36.setIcon(icon_d4c6b2e780d6afdf3dc4e592f6076986);
+        
+    
+            marker_47ebd8b98309527077e6416e23b4ed36.bindTooltip(
+                `<div>
+                     Region: Australasia & Oceania<br>Year: 1985<br>Percentage Change: -36.36%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_276d7cd0732b148af8bac3aa8b696f47 = L.marker(
+                [-29.74485125, 155.44498925],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_f7cb4c32aaba594afc5289c3deb2d251 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_276d7cd0732b148af8bac3aa8b696f47.setIcon(icon_f7cb4c32aaba594afc5289c3deb2d251);
+        
+    
+            marker_276d7cd0732b148af8bac3aa8b696f47.bindTooltip(
+                `<div>
+                     Region: Australasia & Oceania<br>Year: 1986<br>Percentage Change: -42.86%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_614b941b47e4f3a27f7b2e964574b13d = L.marker(
+                [-17.96912233333333, 178.1121926666667],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_1a1cb8496a421e695da204536b2e774a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_614b941b47e4f3a27f7b2e964574b13d.setIcon(icon_1a1cb8496a421e695da204536b2e774a);
+        
+    
+            marker_614b941b47e4f3a27f7b2e964574b13d.bindTooltip(
+                `<div>
+                     Region: Australasia & Oceania<br>Year: 1987<br>Percentage Change: -25.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7d1ec1987d803fde96d861c4ec29ae9e = L.marker(
+                [-25.399054, 160.55356418181816],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_372ee7e9e0e66908062ca153ff4de419 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7d1ec1987d803fde96d861c4ec29ae9e.setIcon(icon_372ee7e9e0e66908062ca153ff4de419);
+        
+    
+            marker_7d1ec1987d803fde96d861c4ec29ae9e.bindTooltip(
+                `<div>
+                     Region: Australasia & Oceania<br>Year: 1988<br>Percentage Change: 266.67%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_37ef882c369949e434f1265ed054130b = L.marker(
+                [-9.434781137931035, 155.57513665517243],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_1ee548802c8600ab765a34be7e52b2c6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_37ef882c369949e434f1265ed054130b.setIcon(icon_1ee548802c8600ab765a34be7e52b2c6);
+        
+    
+            marker_37ef882c369949e434f1265ed054130b.bindTooltip(
+                `<div>
+                     Region: Australasia & Oceania<br>Year: 1989<br>Percentage Change: 163.64%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8bf255fa9b63fa610354d76050a11c45 = L.marker(
+                [-6.258651722222222, 154.2124538888889],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_b5e408ddd8acf001a4edd89bc0fdd575 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_8bf255fa9b63fa610354d76050a11c45.setIcon(icon_b5e408ddd8acf001a4edd89bc0fdd575);
+        
+    
+            marker_8bf255fa9b63fa610354d76050a11c45.bindTooltip(
+                `<div>
+                     Region: Australasia & Oceania<br>Year: 1990<br>Percentage Change: -37.93%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_fff66fead8a6c4a2a9644c8ed5a7a514 = L.marker(
+                [-24.4467666, 154.370563],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_f55788bff993e576777a1f970d3c34ee = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_fff66fead8a6c4a2a9644c8ed5a7a514.setIcon(icon_f55788bff993e576777a1f970d3c34ee);
+        
+    
+            marker_fff66fead8a6c4a2a9644c8ed5a7a514.bindTooltip(
+                `<div>
+                     Region: Australasia & Oceania<br>Year: 1991<br>Percentage Change: -44.44%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_11cef8671aa3ab5cbc470f5252289ce9 = L.marker(
+                [-13.995025529411764, 152.3361628235294],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_9f5e21ca0862d2566b973a32570a56ed = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_11cef8671aa3ab5cbc470f5252289ce9.setIcon(icon_9f5e21ca0862d2566b973a32570a56ed);
+        
+    
+            marker_11cef8671aa3ab5cbc470f5252289ce9.bindTooltip(
+                `<div>
+                     Region: Australasia & Oceania<br>Year: 1992<br>Percentage Change: 70.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4f2ba769433aa88650f170f7dabc5a1d = L.marker(
+                [-27.892400785714283, 124.03413335714286],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_36af1c8fc53d7b8709f25f85272d3dae = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_4f2ba769433aa88650f170f7dabc5a1d.setIcon(icon_36af1c8fc53d7b8709f25f85272d3dae);
+        
+    
+            marker_4f2ba769433aa88650f170f7dabc5a1d.bindTooltip(
+                `<div>
+                     Region: Australasia & Oceania<br>Year: 1994<br>Percentage Change: -17.65%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3f4cd9a803cc9bc07f53412b6c8a574c = L.marker(
+                [-15.289723666666667, 99.48593816666667],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_9ee02eddd82d9b5be6dd5a9e5c8afdba = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_3f4cd9a803cc9bc07f53412b6c8a574c.setIcon(icon_9ee02eddd82d9b5be6dd5a9e5c8afdba);
+        
+    
+            marker_3f4cd9a803cc9bc07f53412b6c8a574c.bindTooltip(
+                `<div>
+                     Region: Australasia & Oceania<br>Year: 1995<br>Percentage Change: 28.57%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_733992c8c62c35fb1e9b746dbcf92c87 = L.marker(
+                [-18.466789631578948, 155.58731842105263],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_eb9f873544e3f699ee1b72cc9b62a7a9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_733992c8c62c35fb1e9b746dbcf92c87.setIcon(icon_eb9f873544e3f699ee1b72cc9b62a7a9);
+        
+    
+            marker_733992c8c62c35fb1e9b746dbcf92c87.bindTooltip(
+                `<div>
+                     Region: Australasia & Oceania<br>Year: 1996<br>Percentage Change: 5.56%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_27491fdea8328932305c2f7cd32694d5 = L.marker(
+                [-26.411132714285714, 155.360468],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_95f6e7491546d2f96399668397998abd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_27491fdea8328932305c2f7cd32694d5.setIcon(icon_95f6e7491546d2f96399668397998abd);
+        
+    
+            marker_27491fdea8328932305c2f7cd32694d5.bindTooltip(
+                `<div>
+                     Region: Australasia & Oceania<br>Year: 1997<br>Percentage Change: -63.16%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_499675e18efbd7b2f468e1a38a084284 = L.marker(
+                [-31.216552499999995, 146.71546049999998],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_7131df1104b8d0ca8368c1af4a1936a9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_499675e18efbd7b2f468e1a38a084284.setIcon(icon_7131df1104b8d0ca8368c1af4a1936a9);
+        
+    
+            marker_499675e18efbd7b2f468e1a38a084284.bindTooltip(
+                `<div>
+                     Region: Australasia & Oceania<br>Year: 1998<br>Percentage Change: -14.29%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a04279d680b469c88513ffdd177e8914 = L.marker(
+                [-16.002284, 173.87032575],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_298a68572989c7058b116ad3c9ddf682 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a04279d680b469c88513ffdd177e8914.setIcon(icon_298a68572989c7058b116ad3c9ddf682);
+        
+    
+            marker_a04279d680b469c88513ffdd177e8914.bindTooltip(
+                `<div>
+                     Region: Australasia & Oceania<br>Year: 1999<br>Percentage Change: -33.33%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_bc69878e26d4eb3c9f3a70d9a1f37afa = L.marker(
+                [-18.800823666666666, 171.13825900000003],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_f3973e065d6a629eb02c7154210e43d7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_bc69878e26d4eb3c9f3a70d9a1f37afa.setIcon(icon_f3973e065d6a629eb02c7154210e43d7);
+        
+    
+            marker_bc69878e26d4eb3c9f3a70d9a1f37afa.bindTooltip(
+                `<div>
+                     Region: Australasia & Oceania<br>Year: 2000<br>Percentage Change: 50.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_98f6c8d5b20ce5b03c7bbdc74e572cc7 = L.marker(
+                [-31.04868675, 162.553874],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_bbedeb90146614737f430a0d9c62d1f8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_98f6c8d5b20ce5b03c7bbdc74e572cc7.setIcon(icon_bbedeb90146614737f430a0d9c62d1f8);
+        
+    
+            marker_98f6c8d5b20ce5b03c7bbdc74e572cc7.bindTooltip(
+                `<div>
+                     Region: Australasia & Oceania<br>Year: 2001<br>Percentage Change: -33.33%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7dfd3933780e1d2c835ba4735bc61e0e = L.marker(
+                [-7.5385325000000005, 151.9398515],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_5f229456d05db5e4eaee80c6039a8e6b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7dfd3933780e1d2c835ba4735bc61e0e.setIcon(icon_5f229456d05db5e4eaee80c6039a8e6b);
+        
+    
+            marker_7dfd3933780e1d2c835ba4735bc61e0e.bindTooltip(
+                `<div>
+                     Region: Australasia & Oceania<br>Year: 2002<br>Percentage Change: -50.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a3ca0e6aed9571c638cec86634abf30d = L.marker(
+                [-32.047011749999996, 171.253951],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_87684c3474f0ece201f46af8920432fb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a3ca0e6aed9571c638cec86634abf30d.setIcon(icon_87684c3474f0ece201f46af8920432fb);
+        
+    
+            marker_a3ca0e6aed9571c638cec86634abf30d.bindTooltip(
+                `<div>
+                     Region: Australasia & Oceania<br>Year: 2003<br>Percentage Change: 100.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4b3cd8d04603d0df471d5eee4feb7b21 = L.marker(
+                [-30.922114, 152.21727149999998],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_70159b56bd709a5470ef02054dbf9e15 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_4b3cd8d04603d0df471d5eee4feb7b21.setIcon(icon_70159b56bd709a5470ef02054dbf9e15);
+        
+    
+            marker_4b3cd8d04603d0df471d5eee4feb7b21.bindTooltip(
+                `<div>
+                     Region: Australasia & Oceania<br>Year: 2006<br>Percentage Change: -50.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2cbafb73cebc4b8b047323e0f4773947 = L.marker(
+                [-6.127153, 143.420306],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_85854bae7f4f3ba7dc01d21620fb4823 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_2cbafb73cebc4b8b047323e0f4773947.setIcon(icon_85854bae7f4f3ba7dc01d21620fb4823);
+        
+    
+            marker_2cbafb73cebc4b8b047323e0f4773947.bindTooltip(
+                `<div>
+                     Region: Australasia & Oceania<br>Year: 2007<br>Percentage Change: -50.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e060305498e87b5d32bdb355a799951a = L.marker(
+                [-37.197593625, 157.163388375],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_70e61c1f409cab319e86e4667e15bd47 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e060305498e87b5d32bdb355a799951a.setIcon(icon_70e61c1f409cab319e86e4667e15bd47);
+        
+    
+            marker_e060305498e87b5d32bdb355a799951a.bindTooltip(
+                `<div>
+                     Region: Australasia & Oceania<br>Year: 2008<br>Percentage Change: 700.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c24eaad019bf29a31ff98902d9b1f47d = L.marker(
+                [-33.922832, 151.011897],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_90206a21d0753c43e34fd7f89bed2897 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_c24eaad019bf29a31ff98902d9b1f47d.setIcon(icon_90206a21d0753c43e34fd7f89bed2897);
+        
+    
+            marker_c24eaad019bf29a31ff98902d9b1f47d.bindTooltip(
+                `<div>
+                     Region: Australasia & Oceania<br>Year: 2009<br>Percentage Change: -87.50%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2680d96e152d01d1e2a36abf5506f41b = L.marker(
+                [-31.952854, 115.857339],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_44e4c7bbe4cfa47f23b693bb36a0c74e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_2680d96e152d01d1e2a36abf5506f41b.setIcon(icon_44e4c7bbe4cfa47f23b693bb36a0c74e);
+        
+    
+            marker_2680d96e152d01d1e2a36abf5506f41b.bindTooltip(
+                `<div>
+                     Region: Australasia & Oceania<br>Year: 2010<br>Percentage Change: 0.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c233729b83cf9d7d070d58690b161bf2 = L.marker(
+                [-37.808896, 144.950421],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_8aeca02fdfddd1aebadd40cc40494b62 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_c233729b83cf9d7d070d58690b161bf2.setIcon(icon_8aeca02fdfddd1aebadd40cc40494b62);
+        
+    
+            marker_c233729b83cf9d7d070d58690b161bf2.bindTooltip(
+                `<div>
+                     Region: Australasia & Oceania<br>Year: 2013<br>Percentage Change: 0.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_367944f3d938e180aca1bab8bea4514b = L.marker(
+                [-34.688012666666665, 152.71546266666667],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_083e8a1e984acb2903a72b7b4440ce7e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_367944f3d938e180aca1bab8bea4514b.setIcon(icon_083e8a1e984acb2903a72b7b4440ce7e);
+        
+    
+            marker_367944f3d938e180aca1bab8bea4514b.bindTooltip(
+                `<div>
+                     Region: Australasia & Oceania<br>Year: 2014<br>Percentage Change: 800.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_feb4018c80d409ff367f49e3f8b412b7 = L.marker(
+                [-35.572121499999994, 147.48505514285716],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_0bfb42d33671a69cffb81d53a614850e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_feb4018c80d409ff367f49e3f8b412b7.setIcon(icon_0bfb42d33671a69cffb81d53a614850e);
+        
+    
+            marker_feb4018c80d409ff367f49e3f8b412b7.bindTooltip(
+                `<div>
+                     Region: Australasia & Oceania<br>Year: 2015<br>Percentage Change: 55.56%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e0fca3a53f38639a1b1ee03adde10c6a = L.marker(
+                [-35.9062804, 143.2577624],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_8a52fc34b6687a42ce05e2f7c93bde44 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e0fca3a53f38639a1b1ee03adde10c6a.setIcon(icon_8a52fc34b6687a42ce05e2f7c93bde44);
+        
+    
+            marker_e0fca3a53f38639a1b1ee03adde10c6a.bindTooltip(
+                `<div>
+                     Region: Australasia & Oceania<br>Year: 2016<br>Percentage Change: -28.57%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_19b1b3fe9fd960546bf40fb605653d5b = L.marker(
+                [-16.27307625, 147.39406799999998],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_b86463b1324ecc550bd4e83dff98ec27 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_19b1b3fe9fd960546bf40fb605653d5b.setIcon(icon_b86463b1324ecc550bd4e83dff98ec27);
+        
+    
+            marker_19b1b3fe9fd960546bf40fb605653d5b.bindTooltip(
+                `<div>
+                     Region: Australasia & Oceania<br>Year: 2017<br>Percentage Change: 20.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d49674fe1a1d301a465c46969e541feb = L.marker(
+                [16.32592725, -73.48420625],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_b2dc4fae540569d8cb76297bbb8c2ce7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d49674fe1a1d301a465c46969e541feb.setIcon(icon_b2dc4fae540569d8cb76297bbb8c2ce7);
+        
+    
+            marker_d49674fe1a1d301a465c46969e541feb.bindTooltip(
+                `<div>
+                     Region: Central America & Caribbean<br>Year: 1971<br>Percentage Change: -33.33%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c4041729398163abe7bf9fdf409349f8 = L.marker(
+                [12.126676333333334, -85.97237133333334],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_575d1859be509f052863dab95739c824 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_c4041729398163abe7bf9fdf409349f8.setIcon(icon_575d1859be509f052863dab95739c824);
+        
+    
+            marker_c4041729398163abe7bf9fdf409349f8.bindTooltip(
+                `<div>
+                     Region: Central America & Caribbean<br>Year: 1972<br>Percentage Change: -25.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7901aca81bf1d3607550286008c903ae = L.marker(
+                [17.111246666666663, -76.55850483333334],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_298e8363e61913ae62d92e98be9c0dc7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7901aca81bf1d3607550286008c903ae.setIcon(icon_298e8363e61913ae62d92e98be9c0dc7);
+        
+    
+            marker_7901aca81bf1d3607550286008c903ae.bindTooltip(
+                `<div>
+                     Region: Central America & Caribbean<br>Year: 1973<br>Percentage Change: 100.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8e925a653cf0d5d9d5e6a141c0af476c = L.marker(
+                [16.540352000000002, -78.68787761538464],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_ec11cd94e9228a267fc35185001adf4b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_8e925a653cf0d5d9d5e6a141c0af476c.setIcon(icon_ec11cd94e9228a267fc35185001adf4b);
+        
+    
+            marker_8e925a653cf0d5d9d5e6a141c0af476c.bindTooltip(
+                `<div>
+                     Region: Central America & Caribbean<br>Year: 1974<br>Percentage Change: 116.67%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c06f0dd90ba02e07103e233832c1d12e = L.marker(
+                [14.052659777777777, -89.50341877777777],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_1bb2d8eefc5b5e997a2e99a771b9803a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_c06f0dd90ba02e07103e233832c1d12e.setIcon(icon_1bb2d8eefc5b5e997a2e99a771b9803a);
+        
+    
+            marker_c06f0dd90ba02e07103e233832c1d12e.bindTooltip(
+                `<div>
+                     Region: Central America & Caribbean<br>Year: 1975<br>Percentage Change: -30.77%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_725510e60556637d92b5776084f924fb = L.marker(
+                [12.548133819999991, -85.02891234000002],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_e566ba480898d525beb9d6aa222e0e06 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_725510e60556637d92b5776084f924fb.setIcon(icon_e566ba480898d525beb9d6aa222e0e06);
+        
+    
+            marker_725510e60556637d92b5776084f924fb.bindTooltip(
+                `<div>
+                     Region: Central America & Caribbean<br>Year: 1976<br>Percentage Change: 455.56%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3fc18bba04c45d030d2d435974d2c355 = L.marker(
+                [12.599456120000003, -87.45445111999999],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_cd43075e6876e4cd3ed28688b3fdab39 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_3fc18bba04c45d030d2d435974d2c355.setIcon(icon_cd43075e6876e4cd3ed28688b3fdab39);
+        
+    
+            marker_3fc18bba04c45d030d2d435974d2c355.bindTooltip(
+                `<div>
+                     Region: Central America & Caribbean<br>Year: 1977<br>Percentage Change: -50.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_902cf1723eabe72da9d14c93ac6f79e3 = L.marker(
+                [13.229245192513375, -88.0279532352941],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_bc3a019a3915ae30916a9ab81352c43e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_902cf1723eabe72da9d14c93ac6f79e3.setIcon(icon_bc3a019a3915ae30916a9ab81352c43e);
+        
+    
+            marker_902cf1723eabe72da9d14c93ac6f79e3.bindTooltip(
+                `<div>
+                     Region: Central America & Caribbean<br>Year: 1978<br>Percentage Change: 648.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ceeee5b6e16c9631ae3cb66f5cbbfb80 = L.marker(
+                [13.33787545884414, -88.14141446935209],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_c8bfd283e57aa42c7313c145a24c245a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_ceeee5b6e16c9631ae3cb66f5cbbfb80.setIcon(icon_c8bfd283e57aa42c7313c145a24c245a);
+        
+    
+            marker_ceeee5b6e16c9631ae3cb66f5cbbfb80.bindTooltip(
+                `<div>
+                     Region: Central America & Caribbean<br>Year: 1979<br>Percentage Change: 205.35%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_756020005cfb6472735d721454c2d54d = L.marker(
+                [13.993377010794834, -88.9672600863591],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_7657a8eebdafbf704c944b6e38bee670 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_756020005cfb6472735d721454c2d54d.setIcon(icon_7657a8eebdafbf704c944b6e38bee670);
+        
+    
+            marker_756020005cfb6472735d721454c2d54d.bindTooltip(
+                `<div>
+                     Region: Central America & Caribbean<br>Year: 1980<br>Percentage Change: 78.46%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2e5590ab03287f6aa81d963bdc699283 = L.marker(
+                [14.067479160940277, -89.21441692857155],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_28084cda7523450dfa1e19e0c9b2b7f3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_2e5590ab03287f6aa81d963bdc699283.setIcon(icon_28084cda7523450dfa1e19e0c9b2b7f3);
+        
+    
+            marker_2e5590ab03287f6aa81d963bdc699283.bindTooltip(
+                `<div>
+                     Region: Central America & Caribbean<br>Year: 1981<br>Percentage Change: 8.54%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7eb5613e31ded1bd042677f068049a09 = L.marker(
+                [14.15500297419352, -92762.24835765269],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_2c77a880ce625f2d4c2f3913485063d4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7eb5613e31ded1bd042677f068049a09.setIcon(icon_2c77a880ce625f2d4c2f3913485063d4);
+        
+    
+            marker_7eb5613e31ded1bd042677f068049a09.bindTooltip(
+                `<div>
+                     Region: Central America & Caribbean<br>Year: 1982<br>Percentage Change: -15.91%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9421ebbfb73a858b0aed88d0a45bde22 = L.marker(
+                [13.788561553619296, -87.21936964745308],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_e8932f5ec29ee0814b11662ec90ab21e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_9421ebbfb73a858b0aed88d0a45bde22.setIcon(icon_e8932f5ec29ee0814b11662ec90ab21e);
+        
+    
+            marker_9421ebbfb73a858b0aed88d0a45bde22.bindTooltip(
+                `<div>
+                     Region: Central America & Caribbean<br>Year: 1983<br>Percentage Change: -19.78%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6fe223b270947bac33ceb0977ca4893c = L.marker(
+                [13.496119263345191, -87.1972024893239],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_acd1ec250063f9b97e925d978da48288 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_6fe223b270947bac33ceb0977ca4893c.setIcon(icon_acd1ec250063f9b97e925d978da48288);
+        
+    
+            marker_6fe223b270947bac33ceb0977ca4893c.bindTooltip(
+                `<div>
+                     Region: Central America & Caribbean<br>Year: 1984<br>Percentage Change: -24.66%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_66ace42e3b1e22a89fadb3f44cc8f867 = L.marker(
+                [13.563193905864201, -87.68400562500005],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_8e9b6fe20001d134c3351f2cad02ac24 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_66ace42e3b1e22a89fadb3f44cc8f867.setIcon(icon_8e9b6fe20001d134c3351f2cad02ac24);
+        
+    
+            marker_66ace42e3b1e22a89fadb3f44cc8f867.bindTooltip(
+                `<div>
+                     Region: Central America & Caribbean<br>Year: 1985<br>Percentage Change: 15.30%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_cb55fe48a57548d859ed766b3839e3a3 = L.marker(
+                [13.5185539006024, -87.42174069578317],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_5ea2d50c6db42472e56b62b34d6d2aa2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_cb55fe48a57548d859ed766b3839e3a3.setIcon(icon_5ea2d50c6db42472e56b62b34d6d2aa2);
+        
+    
+            marker_cb55fe48a57548d859ed766b3839e3a3.bindTooltip(
+                `<div>
+                     Region: Central America & Caribbean<br>Year: 1986<br>Percentage Change: -48.77%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_83cbdea59505846f84ef93474ff850b6 = L.marker(
+                [13.745071892631588, -86.76984478315786],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_895556684251ff8c7a311b9b71c33ff6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_83cbdea59505846f84ef93474ff850b6.setIcon(icon_895556684251ff8c7a311b9b71c33ff6);
+        
+    
+            marker_83cbdea59505846f84ef93474ff850b6.bindTooltip(
+                `<div>
+                     Region: Central America & Caribbean<br>Year: 1987<br>Percentage Change: 43.07%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f7f632a177f1b3ed357801714498eaed = L.marker(
+                [13.797017303240743, -88.14327546296308],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_ba13109502dd3569bbbe8e0304faccff = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f7f632a177f1b3ed357801714498eaed.setIcon(icon_ba13109502dd3569bbbe8e0304faccff);
+        
+    
+            marker_f7f632a177f1b3ed357801714498eaed.bindTooltip(
+                `<div>
+                     Region: Central America & Caribbean<br>Year: 1988<br>Percentage Change: -9.05%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_791690aed9dc80cedd4d6d15b01a6305 = L.marker(
+                [14.05781764270613, -88.37860163847787],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_9504788ca91f3b5aed78a5443034ae55 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_791690aed9dc80cedd4d6d15b01a6305.setIcon(icon_9504788ca91f3b5aed78a5443034ae55);
+        
+    
+            marker_791690aed9dc80cedd4d6d15b01a6305.bindTooltip(
+                `<div>
+                     Region: Central America & Caribbean<br>Year: 1989<br>Percentage Change: 9.49%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0a4f621cee66226de589356790949604 = L.marker(
+                [13.859671930147071, -88.42853574264711],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_f7d9e68935a47e85a35ea3e6d9552b6f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0a4f621cee66226de589356790949604.setIcon(icon_f7d9e68935a47e85a35ea3e6d9552b6f);
+        
+    
+            marker_0a4f621cee66226de589356790949604.bindTooltip(
+                `<div>
+                     Region: Central America & Caribbean<br>Year: 1990<br>Percentage Change: -42.49%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_df8b68a2f95aa6d024d1797cfea37001 = L.marker(
+                [13.882351162327716, -87.67909001837668],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_d397c70f83138eafe394b1113962929d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_df8b68a2f95aa6d024d1797cfea37001.setIcon(icon_d397c70f83138eafe394b1113962929d);
+        
+    
+            marker_df8b68a2f95aa6d024d1797cfea37001.bindTooltip(
+                `<div>
+                     Region: Central America & Caribbean<br>Year: 1991<br>Percentage Change: 140.07%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_629e80ebd7a69c967fcd52ea5d8e342e = L.marker(
+                [14.284314097560985, -82.86789501463412],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_698f773007e11de1f216fe774137c737 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_629e80ebd7a69c967fcd52ea5d8e342e.setIcon(icon_698f773007e11de1f216fe774137c737);
+        
+    
+            marker_629e80ebd7a69c967fcd52ea5d8e342e.bindTooltip(
+                `<div>
+                     Region: Central America & Caribbean<br>Year: 1992<br>Percentage Change: -68.61%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e9d560948843f1d6a92c0ef652b4cfd9 = L.marker(
+                [15.443893942196542, -85.28162432947974],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_b3123fd356c2fa5eaeeea1616f98a365 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e9d560948843f1d6a92c0ef652b4cfd9.setIcon(icon_b3123fd356c2fa5eaeeea1616f98a365);
+        
+    
+            marker_e9d560948843f1d6a92c0ef652b4cfd9.bindTooltip(
+                `<div>
+                     Region: Central America & Caribbean<br>Year: 1994<br>Percentage Change: -15.61%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1b0ee704a80680bd436d6a4bac73f96e = L.marker(
+                [15.002435966216224, -84.17310001351348],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_500c0415fa19ac23ee67f6b88d1fea53 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_1b0ee704a80680bd436d6a4bac73f96e.setIcon(icon_500c0415fa19ac23ee67f6b88d1fea53);
+        
+    
+            marker_1b0ee704a80680bd436d6a4bac73f96e.bindTooltip(
+                `<div>
+                     Region: Central America & Caribbean<br>Year: 1995<br>Percentage Change: -14.45%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_78c11ccb42cba43e656b151cf0e967c7 = L.marker(
+                [15.14388020720721, -82.66185581081079],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_b4e876dddd2611a2a334730faf9187c2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_78c11ccb42cba43e656b151cf0e967c7.setIcon(icon_b4e876dddd2611a2a334730faf9187c2);
+        
+    
+            marker_78c11ccb42cba43e656b151cf0e967c7.bindTooltip(
+                `<div>
+                     Region: Central America & Caribbean<br>Year: 1996<br>Percentage Change: -25.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b078a61f06af1ea2a916bed7ab250e07 = L.marker(
+                [17.089395999999997, -82.80748764827582],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_5b1de1e4ae878547594f75825981dd1c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_b078a61f06af1ea2a916bed7ab250e07.setIcon(icon_5b1de1e4ae878547594f75825981dd1c);
+        
+    
+            marker_b078a61f06af1ea2a916bed7ab250e07.bindTooltip(
+                `<div>
+                     Region: Central America & Caribbean<br>Year: 1997<br>Percentage Change: 30.63%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_963e913a2c279749a452e969bc2e5b78 = L.marker(
+                [18.527716, -72.33284],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_0422fc0af33e7ff1d95089cfc622453e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_963e913a2c279749a452e969bc2e5b78.setIcon(icon_0422fc0af33e7ff1d95089cfc622453e);
+        
+    
+            marker_963e913a2c279749a452e969bc2e5b78.bindTooltip(
+                `<div>
+                     Region: Central America & Caribbean<br>Year: 1998<br>Percentage Change: -99.31%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d18a93cc749faae29cee4da2c649a413 = L.marker(
+                [16.287205625, -77.03419975],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_606f322b45caeca93fb67d17486062dd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d18a93cc749faae29cee4da2c649a413.setIcon(icon_606f322b45caeca93fb67d17486062dd);
+        
+    
+            marker_d18a93cc749faae29cee4da2c649a413.bindTooltip(
+                `<div>
+                     Region: Central America & Caribbean<br>Year: 1999<br>Percentage Change: 700.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_389dcbcdc55261c2c612f1433d43c6a8 = L.marker(
+                [17.05001676470588, -74.98935605882355],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_921e2a3cbde164807f0e37a012d436fd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_389dcbcdc55261c2c612f1433d43c6a8.setIcon(icon_921e2a3cbde164807f0e37a012d436fd);
+        
+    
+            marker_389dcbcdc55261c2c612f1433d43c6a8.bindTooltip(
+                `<div>
+                     Region: Central America & Caribbean<br>Year: 2000<br>Percentage Change: 112.50%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_242413d8dbf8ef166e3d739ec9942697 = L.marker(
+                [16.545893, -78.34282575],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_4d3f4c7da4dd18e84603f5e17a4837dc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_242413d8dbf8ef166e3d739ec9942697.setIcon(icon_4d3f4c7da4dd18e84603f5e17a4837dc);
+        
+    
+            marker_242413d8dbf8ef166e3d739ec9942697.bindTooltip(
+                `<div>
+                     Region: Central America & Caribbean<br>Year: 2001<br>Percentage Change: -52.94%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a83cc68333d361788581953c919e36f0 = L.marker(
+                [17.325937999999997, -77.69861333333331],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_6e98331b745f9f18b91ceecad56228b1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a83cc68333d361788581953c919e36f0.setIcon(icon_6e98331b745f9f18b91ceecad56228b1);
+        
+    
+            marker_a83cc68333d361788581953c919e36f0.bindTooltip(
+                `<div>
+                     Region: Central America & Caribbean<br>Year: 2002<br>Percentage Change: -62.50%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8b990d0bb055cb6539add8ad483e4192 = L.marker(
+                [17.544247125000002, -79.181168],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_0d9bf9527a8c60f33ebba449515d45a3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_8b990d0bb055cb6539add8ad483e4192.setIcon(icon_0d9bf9527a8c60f33ebba449515d45a3);
+        
+    
+            marker_8b990d0bb055cb6539add8ad483e4192.bindTooltip(
+                `<div>
+                     Region: Central America & Caribbean<br>Year: 2003<br>Percentage Change: 166.67%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0df516a02707ad9c35cb5389742e858a = L.marker(
+                [16.433281, -82.570902],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_29dd96eebd3ef15efbdd398e031aee40 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0df516a02707ad9c35cb5389742e858a.setIcon(icon_29dd96eebd3ef15efbdd398e031aee40);
+        
+    
+            marker_0df516a02707ad9c35cb5389742e858a.bindTooltip(
+                `<div>
+                     Region: Central America & Caribbean<br>Year: 2004<br>Percentage Change: -37.50%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_83deb13d8ad8838abddc7f0fe3c60452 = L.marker(
+                [13.679758, -65.14527433333333],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_1bc77bdad23548f0227f9a157b62db57 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_83deb13d8ad8838abddc7f0fe3c60452.setIcon(icon_1bc77bdad23548f0227f9a157b62db57);
+        
+    
+            marker_83deb13d8ad8838abddc7f0fe3c60452.bindTooltip(
+                `<div>
+                     Region: Central America & Caribbean<br>Year: 2005<br>Percentage Change: -40.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c8c25320c310dca6937fae6a4ff40cda = L.marker(
+                [15.433901800000001, -87.0769],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_327121cf825b0d3e77292af007029f86 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_c8c25320c310dca6937fae6a4ff40cda.setIcon(icon_327121cf825b0d3e77292af007029f86);
+        
+    
+            marker_c8c25320c310dca6937fae6a4ff40cda.bindTooltip(
+                `<div>
+                     Region: Central America & Caribbean<br>Year: 2006<br>Percentage Change: 66.67%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_08963d15a2d38db04122d914efd2a79a = L.marker(
+                [19.78277225, -76.04465475],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_76903ae9e0fc61a080a78429e2178e88 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_08963d15a2d38db04122d914efd2a79a.setIcon(icon_76903ae9e0fc61a080a78429e2178e88);
+        
+    
+            marker_08963d15a2d38db04122d914efd2a79a.bindTooltip(
+                `<div>
+                     Region: Central America & Caribbean<br>Year: 2007<br>Percentage Change: -20.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7d941c64468830eea5c373b15b76c5ed = L.marker(
+                [13.472540666666667, -86.18418433333333],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_9f9d1431fe7f7e354dce9dcdfb2be4a8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7d941c64468830eea5c373b15b76c5ed.setIcon(icon_9f9d1431fe7f7e354dce9dcdfb2be4a8);
+        
+    
+            marker_7d941c64468830eea5c373b15b76c5ed.bindTooltip(
+                `<div>
+                     Region: Central America & Caribbean<br>Year: 2009<br>Percentage Change: 125.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a395f3fb8944712fa36d6dddd0509ce4 = L.marker(
+                [10.648243, -61.198443],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_be4e25cd69b45253770f171bdf5192fb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a395f3fb8944712fa36d6dddd0509ce4.setIcon(icon_be4e25cd69b45253770f171bdf5192fb);
+        
+    
+            marker_a395f3fb8944712fa36d6dddd0509ce4.bindTooltip(
+                `<div>
+                     Region: Central America & Caribbean<br>Year: 2010<br>Percentage Change: -88.89%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c50c3f47673d56e3019154c500ce57a7 = L.marker(
+                [14.0833, -87.2167],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_65cd881d1ec30403da314c14a247ff81 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_c50c3f47673d56e3019154c500ce57a7.setIcon(icon_65cd881d1ec30403da314c14a247ff81);
+        
+    
+            marker_c50c3f47673d56e3019154c500ce57a7.bindTooltip(
+                `<div>
+                     Region: Central America & Caribbean<br>Year: 2011<br>Percentage Change: 0.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c97bcbae192bf7dd6f1ef8972f67ac73 = L.marker(
+                [14.622869, -90.529068],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_f07c440de5a52dafab8562e721ccd4a7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_c97bcbae192bf7dd6f1ef8972f67ac73.setIcon(icon_f07c440de5a52dafab8562e721ccd4a7);
+        
+    
+            marker_c97bcbae192bf7dd6f1ef8972f67ac73.bindTooltip(
+                `<div>
+                     Region: Central America & Caribbean<br>Year: 2012<br>Percentage Change: 0.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_accc8adda2ad9f828247e3c74137baac = L.marker(
+                [15.112865538461536, -80.24963346153845],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_fea338a86cc495c3c5bd26b6a2dc439d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_accc8adda2ad9f828247e3c74137baac.setIcon(icon_fea338a86cc495c3c5bd26b6a2dc439d);
+        
+    
+            marker_accc8adda2ad9f828247e3c74137baac.bindTooltip(
+                `<div>
+                     Region: Central America & Caribbean<br>Year: 2013<br>Percentage Change: 1200.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_365ba1d97fda89422676fa2c3b7e9696 = L.marker(
+                [15.224698799999999, -81.0998226],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_4bf0b8c815ed8670605fcdbf5861bbe6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_365ba1d97fda89422676fa2c3b7e9696.setIcon(icon_4bf0b8c815ed8670605fcdbf5861bbe6);
+        
+    
+            marker_365ba1d97fda89422676fa2c3b7e9696.bindTooltip(
+                `<div>
+                     Region: Central America & Caribbean<br>Year: 2014<br>Percentage Change: -61.54%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d5b339f9265b9474be9b51a0add1b83d = L.marker(
+                [10.637896, -61.405589],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_5b38a264d02d33aaec02c5597c33f85f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d5b339f9265b9474be9b51a0add1b83d.setIcon(icon_5b38a264d02d33aaec02c5597c33f85f);
+        
+    
+            marker_d5b339f9265b9474be9b51a0add1b83d.bindTooltip(
+                `<div>
+                     Region: Central America & Caribbean<br>Year: 2015<br>Percentage Change: -80.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_59847673f2d6dddab8312aca6699cb12 = L.marker(
+                [13.921005, -79.08849933333333],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_92ca1104bec80f9705ee9694e605a26e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_59847673f2d6dddab8312aca6699cb12.setIcon(icon_92ca1104bec80f9705ee9694e605a26e);
+        
+    
+            marker_59847673f2d6dddab8312aca6699cb12.bindTooltip(
+                `<div>
+                     Region: Central America & Caribbean<br>Year: 2016<br>Percentage Change: 200.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_36d6b2870ed0a6c520da142e5dc884a6 = L.marker(
+                [17.567628, -77.59089825],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_4d5aaa8ca31e3e4c36bf122450235fc7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_36d6b2870ed0a6c520da142e5dc884a6.setIcon(icon_4d5aaa8ca31e3e4c36bf122450235fc7);
+        
+    
+            marker_36d6b2870ed0a6c520da142e5dc884a6.bindTooltip(
+                `<div>
+                     Region: Central America & Caribbean<br>Year: 2017<br>Percentage Change: 33.33%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_483462377b36a3dd88380cf97e8de745 = L.marker(
+                [41.460553152542374, 53.47251089830507],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_350ebf3a98d3b171d48ee475b1111634 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_483462377b36a3dd88380cf97e8de745.setIcon(icon_350ebf3a98d3b171d48ee475b1111634);
+        
+    
+            marker_483462377b36a3dd88380cf97e8de745.bindTooltip(
+                `<div>
+                     Region: Central Asia<br>Year: 1992<br>Percentage Change: 1080.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3c43d0db108322e9dcb836179b82ce34 = L.marker(
+                [39.6662184, 59.757019225],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_33a936a18122e1b74176a2950cd00bc8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_3c43d0db108322e9dcb836179b82ce34.setIcon(icon_33a936a18122e1b74176a2950cd00bc8);
+        
+    
+            marker_3c43d0db108322e9dcb836179b82ce34.bindTooltip(
+                `<div>
+                     Region: Central Asia<br>Year: 1994<br>Percentage Change: -32.20%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ebd6d8ba82bd9f32fe6714fabcf9ae79 = L.marker(
+                [39.43409802325581, 62.82135662790697],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_bb086624efd4b08ee2922056bb728968 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_ebd6d8ba82bd9f32fe6714fabcf9ae79.setIcon(icon_bb086624efd4b08ee2922056bb728968);
+        
+    
+            marker_ebd6d8ba82bd9f32fe6714fabcf9ae79.bindTooltip(
+                `<div>
+                     Region: Central Asia<br>Year: 1995<br>Percentage Change: 7.50%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2614ac4925b7396bb9a2b6be1295c44a = L.marker(
+                [39.72003256666667, 67.00786953333333],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_058f87a526eb4b1b805f4dea611773e0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_2614ac4925b7396bb9a2b6be1295c44a.setIcon(icon_058f87a526eb4b1b805f4dea611773e0);
+        
+    
+            marker_2614ac4925b7396bb9a2b6be1295c44a.bindTooltip(
+                `<div>
+                     Region: Central Asia<br>Year: 1996<br>Percentage Change: -30.23%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d685d72dcbdf625410d7004a14ba233d = L.marker(
+                [39.26950008510639, 65.89303119148934],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_fb315424cff01ad997dc3bfa532b8074 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d685d72dcbdf625410d7004a14ba233d.setIcon(icon_fb315424cff01ad997dc3bfa532b8074);
+        
+    
+            marker_d685d72dcbdf625410d7004a14ba233d.bindTooltip(
+                `<div>
+                     Region: Central Asia<br>Year: 1997<br>Percentage Change: 56.67%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_12964e0b153ece5b934b9aa6fb2ff327 = L.marker(
+                [40.635731857142865, 54.58075795238095],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_acf8e81b5f06ad3ad03cf00c7496f598 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_12964e0b153ece5b934b9aa6fb2ff327.setIcon(icon_acf8e81b5f06ad3ad03cf00c7496f598);
+        
+    
+            marker_12964e0b153ece5b934b9aa6fb2ff327.bindTooltip(
+                `<div>
+                     Region: Central Asia<br>Year: 1998<br>Percentage Change: -55.32%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_134b950bffd0ded8a7c256874a7066ee = L.marker(
+                [41.09295226315788, 64.9743454473684],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_9cbc0ca1d32d93cd45a65367240f2c91 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_134b950bffd0ded8a7c256874a7066ee.setIcon(icon_9cbc0ca1d32d93cd45a65367240f2c91);
+        
+    
+            marker_134b950bffd0ded8a7c256874a7066ee.bindTooltip(
+                `<div>
+                     Region: Central Asia<br>Year: 1999<br>Percentage Change: 80.95%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d64f7098e78680c0d6d69517f2f431ea = L.marker(
+                [40.82017353846153, 61.884590615384624],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_f01bb185356a1ff7306c818ba203c1c0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d64f7098e78680c0d6d69517f2f431ea.setIcon(icon_f01bb185356a1ff7306c818ba203c1c0);
+        
+    
+            marker_d64f7098e78680c0d6d69517f2f431ea.bindTooltip(
+                `<div>
+                     Region: Central Asia<br>Year: 2000<br>Percentage Change: -65.79%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5aa501c96496ae44550afb59ec16ad67 = L.marker(
+                [41.21033075, 57.1721805625],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_622893d25a979ec488bd0ce5c4363e76 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_5aa501c96496ae44550afb59ec16ad67.setIcon(icon_622893d25a979ec488bd0ce5c4363e76);
+        
+    
+            marker_5aa501c96496ae44550afb59ec16ad67.bindTooltip(
+                `<div>
+                     Region: Central Asia<br>Year: 2001<br>Percentage Change: 23.08%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_67ee2ce74b180ae78246c0f7c88539a2 = L.marker(
+                [41.36373640000001, 59.7842118],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_40be05a15593c4abfb0e74e2c928a0a6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_67ee2ce74b180ae78246c0f7c88539a2.setIcon(icon_40be05a15593c4abfb0e74e2c928a0a6);
+        
+    
+            marker_67ee2ce74b180ae78246c0f7c88539a2.bindTooltip(
+                `<div>
+                     Region: Central Asia<br>Year: 2002<br>Percentage Change: -68.75%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a2c388e28b7f8f0f37f9760d52cf81f6 = L.marker(
+                [42.358124000000004, 41.9213285],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_9e410bbeee15f1b7321c8849f9c5e741 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a2c388e28b7f8f0f37f9760d52cf81f6.setIcon(icon_9e410bbeee15f1b7321c8849f9c5e741);
+        
+    
+            marker_a2c388e28b7f8f0f37f9760d52cf81f6.bindTooltip(
+                `<div>
+                     Region: Central Asia<br>Year: 2003<br>Percentage Change: -20.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_82947930a218fb051eba040d34d01a80 = L.marker(
+                [41.49826622222222, 63.640265444444445],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_691a240637c43c83628e431aad179d6d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_82947930a218fb051eba040d34d01a80.setIcon(icon_691a240637c43c83628e431aad179d6d);
+        
+    
+            marker_82947930a218fb051eba040d34d01a80.bindTooltip(
+                `<div>
+                     Region: Central Asia<br>Year: 2004<br>Percentage Change: 125.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0f69219d26c1f57e6d7fd8aa21063413 = L.marker(
+                [41.52110666666667, 55.974003555555555],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_f609f427e7962f378ed36559ddb10da5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0f69219d26c1f57e6d7fd8aa21063413.setIcon(icon_f609f427e7962f378ed36559ddb10da5);
+        
+    
+            marker_0f69219d26c1f57e6d7fd8aa21063413.bindTooltip(
+                `<div>
+                     Region: Central Asia<br>Year: 2005<br>Percentage Change: 0.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6198ca47f144aecd36736f5d4658de8b = L.marker(
+                [42.46934316666667, 58.016514666666666],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_31767a9c99c288b662e79ce2d418f3ad = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_6198ca47f144aecd36736f5d4658de8b.setIcon(icon_31767a9c99c288b662e79ce2d418f3ad);
+        
+    
+            marker_6198ca47f144aecd36736f5d4658de8b.bindTooltip(
+                `<div>
+                     Region: Central Asia<br>Year: 2006<br>Percentage Change: -33.33%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_261bc5f5207fde0e1cf596e3c4eab901 = L.marker(
+                [40.556384, 64.40574333333335],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_f5eb8a3172a56c75d76711fdcbe0a7b2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_261bc5f5207fde0e1cf596e3c4eab901.setIcon(icon_f5eb8a3172a56c75d76711fdcbe0a7b2);
+        
+    
+            marker_261bc5f5207fde0e1cf596e3c4eab901.bindTooltip(
+                `<div>
+                     Region: Central Asia<br>Year: 2007<br>Percentage Change: -50.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_429a2b2837d9b1d28533473a7b72ba8a = L.marker(
+                [42.13669124242424, 45.15566303030303],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_4a7a86392666f8215246559e70c29604 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_429a2b2837d9b1d28533473a7b72ba8a.setIcon(icon_4a7a86392666f8215246559e70c29604);
+        
+    
+            marker_429a2b2837d9b1d28533473a7b72ba8a.bindTooltip(
+                `<div>
+                     Region: Central Asia<br>Year: 2008<br>Percentage Change: 1000.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_73db41e095dbd08b8ed6094478267738 = L.marker(
+                [41.97470352173913, 47.007370652173904],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_a081afd263630444fb806a6986751f40 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_73db41e095dbd08b8ed6094478267738.setIcon(icon_a081afd263630444fb806a6986751f40);
+        
+    
+            marker_73db41e095dbd08b8ed6094478267738.bindTooltip(
+                `<div>
+                     Region: Central Asia<br>Year: 2009<br>Percentage Change: -30.30%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5bf12640dbbaab4ac6b857649f4db597 = L.marker(
+                [42.347308857142856, 50.55270385714285],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_6b2ed30f638dac13064f4db6f5d5cf1b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_5bf12640dbbaab4ac6b857649f4db597.setIcon(icon_6b2ed30f638dac13064f4db6f5d5cf1b);
+        
+    
+            marker_5bf12640dbbaab4ac6b857649f4db597.bindTooltip(
+                `<div>
+                     Region: Central Asia<br>Year: 2010<br>Percentage Change: -69.57%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7a6bb0b4259a8dab92c25b49af31d561 = L.marker(
+                [45.106300714285716, 61.123934],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_89387517367f392262b461e5bd4c3ae4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_7a6bb0b4259a8dab92c25b49af31d561.setIcon(icon_89387517367f392262b461e5bd4c3ae4);
+        
+    
+            marker_7a6bb0b4259a8dab92c25b49af31d561.bindTooltip(
+                `<div>
+                     Region: Central Asia<br>Year: 2011<br>Percentage Change: 0.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_10fcaf3d4ad908ecc10367ebd17d25e5 = L.marker(
+                [41.687884833333335, 61.65051116666666],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_7b9da7f0fd1dc3a0ad86049d7c815858 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_10fcaf3d4ad908ecc10367ebd17d25e5.setIcon(icon_7b9da7f0fd1dc3a0ad86049d7c815858);
+        
+    
+            marker_10fcaf3d4ad908ecc10367ebd17d25e5.bindTooltip(
+                `<div>
+                     Region: Central Asia<br>Year: 2012<br>Percentage Change: 71.43%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6be42c33edf5c7e9279a30227fc13d71 = L.marker(
+                [48.43617333333333, 58.01847583333333],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_8f7de964ed7ba423573452875b032e17 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_6be42c33edf5c7e9279a30227fc13d71.setIcon(icon_8f7de964ed7ba423573452875b032e17);
+        
+    
+            marker_6be42c33edf5c7e9279a30227fc13d71.bindTooltip(
+                `<div>
+                     Region: Central Asia<br>Year: 2013<br>Percentage Change: -50.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_926d96b45221c6cb747c988f0edcd4e7 = L.marker(
+                [40.65439788888889, 58.291230444444444],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_99b5b0913b8c5cf2f1cbf89a65c2532d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_926d96b45221c6cb747c988f0edcd4e7.setIcon(icon_99b5b0913b8c5cf2f1cbf89a65c2532d);
+        
+    
+            marker_926d96b45221c6cb747c988f0edcd4e7.bindTooltip(
+                `<div>
+                     Region: Central Asia<br>Year: 2014<br>Percentage Change: 50.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c480db6aeadd6cc05af2303013aeda7b = L.marker(
+                [41.251698714285716, 67.953525],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_8be3ce3e3cf514bcf144d195cb4b463a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_c480db6aeadd6cc05af2303013aeda7b.setIcon(icon_8be3ce3e3cf514bcf144d195cb4b463a);
+        
+    
+            marker_c480db6aeadd6cc05af2303013aeda7b.bindTooltip(
+                `<div>
+                     Region: Central Asia<br>Year: 2015<br>Percentage Change: -22.22%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_77a0733543719fb71eb248f403eb7cd8 = L.marker(
+                [43.066779249999996, 57.7725681875],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_4955c4773e64d8316b66ea6972334269 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_77a0733543719fb71eb248f403eb7cd8.setIcon(icon_4955c4773e64d8316b66ea6972334269);
+        
+    
+            marker_77a0733543719fb71eb248f403eb7cd8.bindTooltip(
+                `<div>
+                     Region: Central Asia<br>Year: 2016<br>Percentage Change: 128.57%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f6bd1a1177ae29ffb33cddcf28afe2aa = L.marker(
+                [40.19717285714286, 60.632971],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_b8488eeeb0a7644951fa7c0fed83145c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f6bd1a1177ae29ffb33cddcf28afe2aa.setIcon(icon_b8488eeeb0a7644951fa7c0fed83145c);
+        
+    
+            marker_f6bd1a1177ae29ffb33cddcf28afe2aa.bindTooltip(
+                `<div>
+                     Region: Central Asia<br>Year: 2017<br>Percentage Change: -56.25%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a73bcf88b4789df346b6025fabc7f367 = L.marker(
+                [23.583333, 119.58333],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_7aae08739650516e17b4df4300bee68a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a73bcf88b4789df346b6025fabc7f367.setIcon(icon_7aae08739650516e17b4df4300bee68a);
+        
+    
+            marker_a73bcf88b4789df346b6025fabc7f367.bindTooltip(
+                `<div>
+                     Region: East Asia<br>Year: 1971<br>Percentage Change: -50.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_98b9f901746ca1dfb7eab669d7339f94 = L.marker(
+                [35.485232999999994, 139.709971],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_c55969db43a64e6dcee4033a5d1c2aaf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_98b9f901746ca1dfb7eab669d7339f94.setIcon(icon_c55969db43a64e6dcee4033a5d1c2aaf);
+        
+    
+            marker_98b9f901746ca1dfb7eab669d7339f94.bindTooltip(
+                `<div>
+                     Region: East Asia<br>Year: 1973<br>Percentage Change: 100.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ad1071d346d5e8bdd6f259a7d5f750a5 = L.marker(
+                [35.46190059999999, 134.4541522],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_11e1c8508578ae7e7ee54057efb6ef12 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_ad1071d346d5e8bdd6f259a7d5f750a5.setIcon(icon_11e1c8508578ae7e7ee54057efb6ef12);
+        
+    
+            marker_ad1071d346d5e8bdd6f259a7d5f750a5.bindTooltip(
+                `<div>
+                     Region: East Asia<br>Year: 1974<br>Percentage Change: 150.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4eb943ce0920db74d7d2f5941d278983 = L.marker(
+                [34.705375599999996, 138.235403],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_ade7aad16c43acc8aa551d04359144b8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_4eb943ce0920db74d7d2f5941d278983.setIcon(icon_ade7aad16c43acc8aa551d04359144b8);
+        
+    
+            marker_4eb943ce0920db74d7d2f5941d278983.bindTooltip(
+                `<div>
+                     Region: East Asia<br>Year: 1975<br>Percentage Change: 100.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8cbef99ae6b8a0972dd949b844b0c2c7 = L.marker(
+                [34.0765855, 131.457105],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_72367bd57983c609e93cb02caf4b09d5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_8cbef99ae6b8a0972dd949b844b0c2c7.setIcon(icon_72367bd57983c609e93cb02caf4b09d5);
+        
+    
+            marker_8cbef99ae6b8a0972dd949b844b0c2c7.bindTooltip(
+                `<div>
+                     Region: East Asia<br>Year: 1976<br>Percentage Change: -80.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4c3739060353ff397dd400816d2d44f8 = L.marker(
+                [35.689125, 139.747742],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_5c1cb2e8d5b4c33963394f306007f765 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_4c3739060353ff397dd400816d2d44f8.setIcon(icon_5c1cb2e8d5b4c33963394f306007f765);
+        
+    
+            marker_4c3739060353ff397dd400816d2d44f8.bindTooltip(
+                `<div>
+                     Region: East Asia<br>Year: 1977<br>Percentage Change: 100.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_be1e4408c9baa540949e22a8863003b5 = L.marker(
+                [35.36873434285716, 138.97955728571426],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_632bfdc3690acb74f2afef74a812ea77 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_be1e4408c9baa540949e22a8863003b5.setIcon(icon_632bfdc3690acb74f2afef74a812ea77);
+        
+    
+            marker_be1e4408c9baa540949e22a8863003b5.bindTooltip(
+                `<div>
+                     Region: East Asia<br>Year: 1978<br>Percentage Change: 775.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ff08eafdd7c0a4b3efda97e2d0ec237d = L.marker(
+                [35.621885066666664, 139.31890460000002],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_46a5d9db4c18e01cdd37e1a2214d3dee = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_ff08eafdd7c0a4b3efda97e2d0ec237d.setIcon(icon_46a5d9db4c18e01cdd37e1a2214d3dee);
+        
+    
+            marker_ff08eafdd7c0a4b3efda97e2d0ec237d.bindTooltip(
+                `<div>
+                     Region: East Asia<br>Year: 1979<br>Percentage Change: -57.14%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c84b8adb39cc3dfe6a34ba8191d8433a = L.marker(
+                [22.281867, 114.161326],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_9e0d44b9d55b5fd7a0b25653954bfb49 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_c84b8adb39cc3dfe6a34ba8191d8433a.setIcon(icon_9e0d44b9d55b5fd7a0b25653954bfb49);
+        
+    
+            marker_c84b8adb39cc3dfe6a34ba8191d8433a.bindTooltip(
+                `<div>
+                     Region: East Asia<br>Year: 1980<br>Percentage Change: -93.33%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b6c5e1235fc4866fe6279f87debc2495 = L.marker(
+                [25.633681499999998, 120.55793],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_6ae64f8c050d2f14303a46e30cd50a1a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_b6c5e1235fc4866fe6279f87debc2495.setIcon(icon_6ae64f8c050d2f14303a46e30cd50a1a);
+        
+    
+            marker_b6c5e1235fc4866fe6279f87debc2495.bindTooltip(
+                `<div>
+                     Region: East Asia<br>Year: 1981<br>Percentage Change: 300.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_de583fdf2abea04046aa9eb69ff33860 = L.marker(
+                [35.519268000000004, 136.19037533333332],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_8caa03e828e70f14168dc720d4efdf98 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_de583fdf2abea04046aa9eb69ff33860.setIcon(icon_8caa03e828e70f14168dc720d4efdf98);
+        
+    
+            marker_de583fdf2abea04046aa9eb69ff33860.bindTooltip(
+                `<div>
+                     Region: East Asia<br>Year: 1982<br>Percentage Change: -25.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e707e3a274b837398b13121ad2cc3b12 = L.marker(
+                [35.380381, 137.6770096153846],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_d2db1232a08e33642d55678015b7ca9b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e707e3a274b837398b13121ad2cc3b12.setIcon(icon_d2db1232a08e33642d55678015b7ca9b);
+        
+    
+            marker_e707e3a274b837398b13121ad2cc3b12.bindTooltip(
+                `<div>
+                     Region: East Asia<br>Year: 1983<br>Percentage Change: 333.33%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b54c3af69f425dda3cedbb9a12beb1ad = L.marker(
+                [35.485578600000004, 139.05760093333336],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_afa25ccbf29517ea72236cf7a535024c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_b54c3af69f425dda3cedbb9a12beb1ad.setIcon(icon_afa25ccbf29517ea72236cf7a535024c);
+        
+    
+            marker_b54c3af69f425dda3cedbb9a12beb1ad.bindTooltip(
+                `<div>
+                     Region: East Asia<br>Year: 1984<br>Percentage Change: 15.38%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b174a4bfeebc0d48db2d4327c8ec9c27 = L.marker(
+                [35.6431774, 139.7271369],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_534546e9b38c50fd4391690fb65c5c95 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_b174a4bfeebc0d48db2d4327c8ec9c27.setIcon(icon_534546e9b38c50fd4391690fb65c5c95);
+        
+    
+            marker_b174a4bfeebc0d48db2d4327c8ec9c27.bindTooltip(
+                `<div>
+                     Region: East Asia<br>Year: 1985<br>Percentage Change: -33.33%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_24b78d93f7ee0e14c150742ffb03c279 = L.marker(
+                [34.84548358333333, 136.06161125],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_74dfc13541635d71fa74a2a01b35f001 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_24b78d93f7ee0e14c150742ffb03c279.setIcon(icon_74dfc13541635d71fa74a2a01b35f001);
+        
+    
+            marker_24b78d93f7ee0e14c150742ffb03c279.bindTooltip(
+                `<div>
+                     Region: East Asia<br>Year: 1986<br>Percentage Change: 20.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8d00c16c6d47a49b3b38dabe7749f2a1 = L.marker(
+                [34.5813181, 137.8054393],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_6cd3257a15560ad427692e0d0120b1c6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_8d00c16c6d47a49b3b38dabe7749f2a1.setIcon(icon_6cd3257a15560ad427692e0d0120b1c6);
+        
+    
+            marker_8d00c16c6d47a49b3b38dabe7749f2a1.bindTooltip(
+                `<div>
+                     Region: East Asia<br>Year: 1987<br>Percentage Change: -16.67%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0d64873a1841107f5c3fb4014df3e86d = L.marker(
+                [35.46706265384615, 135.16662626923076],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_1492a525072c1cb095d377dd905dd8cd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0d64873a1841107f5c3fb4014df3e86d.setIcon(icon_1492a525072c1cb095d377dd905dd8cd);
+        
+    
+            marker_0d64873a1841107f5c3fb4014df3e86d.bindTooltip(
+                `<div>
+                     Region: East Asia<br>Year: 1988<br>Percentage Change: 160.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9a200d89df0b9b4a92725dc50ca51feb = L.marker(
+                [34.71015266666666, 133.97462955555557],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_ac4fca4bd3dcc0b31783254325430182 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_9a200d89df0b9b4a92725dc50ca51feb.setIcon(icon_ac4fca4bd3dcc0b31783254325430182);
+        
+    
+            marker_9a200d89df0b9b4a92725dc50ca51feb.bindTooltip(
+                `<div>
+                     Region: East Asia<br>Year: 1989<br>Percentage Change: -30.77%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c4b9b6386b801c808cf6265dc4736c33 = L.marker(
+                [35.265026969387755, 137.2191311836734],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_c00f814ad281c95ada5d173f0c2162a0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_c4b9b6386b801c808cf6265dc4736c33.setIcon(icon_c00f814ad281c95ada5d173f0c2162a0);
+        
+    
+            marker_c4b9b6386b801c808cf6265dc4736c33.bindTooltip(
+                `<div>
+                     Region: East Asia<br>Year: 1990<br>Percentage Change: 444.44%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d938f0d7aec049219dc6f4e58dd5e179 = L.marker(
+                [34.47663613793103, 133.28230020689654],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_dc5c07fd903c5cf3ed8dda6fd881c9f5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d938f0d7aec049219dc6f4e58dd5e179.setIcon(icon_dc5c07fd903c5cf3ed8dda6fd881c9f5);
+        
+    
+            marker_d938f0d7aec049219dc6f4e58dd5e179.bindTooltip(
+                `<div>
+                     Region: East Asia<br>Year: 1991<br>Percentage Change: -70.41%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_977a364c1e5d800042b3c4c48bab792d = L.marker(
+                [31.005624718309864, 128.93194073239437],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_7094b6a4aa35694356bf97e6e0ad4254 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_977a364c1e5d800042b3c4c48bab792d.setIcon(icon_7094b6a4aa35694356bf97e6e0ad4254);
+        
+    
+            marker_977a364c1e5d800042b3c4c48bab792d.bindTooltip(
+                `<div>
+                     Region: East Asia<br>Year: 1992<br>Percentage Change: 144.83%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a0f678fb4096344d87d4ecf54717e8cc = L.marker(
+                [31.627362617647055, 122.61113294117646],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_db7b7e30fcb703e082adea61b33d384c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a0f678fb4096344d87d4ecf54717e8cc.setIcon(icon_db7b7e30fcb703e082adea61b33d384c);
+        
+    
+            marker_a0f678fb4096344d87d4ecf54717e8cc.bindTooltip(
+                `<div>
+                     Region: East Asia<br>Year: 1994<br>Percentage Change: -52.11%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_699048ad483eee62c0f4ca43cd4cca8c = L.marker(
+                [32.69894, 128.8913922368421],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_c1883239879b916f2cef4695f00ea5df = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_699048ad483eee62c0f4ca43cd4cca8c.setIcon(icon_c1883239879b916f2cef4695f00ea5df);
+        
+    
+            marker_699048ad483eee62c0f4ca43cd4cca8c.bindTooltip(
+                `<div>
+                     Region: East Asia<br>Year: 1995<br>Percentage Change: 11.76%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4e211868569e11b952c8723cca90e2eb = L.marker(
+                [36.79920546590911, 101.18201302272732],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_4ecb559dafdecc773eb52a01701aa845 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_4e211868569e11b952c8723cca90e2eb.setIcon(icon_4ecb559dafdecc773eb52a01701aa845);
+        
+    
+            marker_4e211868569e11b952c8723cca90e2eb.bindTooltip(
+                `<div>
+                     Region: East Asia<br>Year: 1996<br>Percentage Change: 131.58%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ad970536075ee6d1d5829e5f57964518 = L.marker(
+                [31.924427450000007, 109.73923049999999],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_a5ef8fc9cb63fea685baaf71a55a2990 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_ad970536075ee6d1d5829e5f57964518.setIcon(icon_a5ef8fc9cb63fea685baaf71a55a2990);
+        
+    
+            marker_ad970536075ee6d1d5829e5f57964518.bindTooltip(
+                `<div>
+                     Region: East Asia<br>Year: 1997<br>Percentage Change: -54.55%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f69ace3e9105feaa8702c23b204d1a4d = L.marker(
+                [27.055222, 113.04900433333334],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_8b88285543f16266992860d5e7d3535e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f69ace3e9105feaa8702c23b204d1a4d.setIcon(icon_8b88285543f16266992860d5e7d3535e);
+        
+    
+            marker_f69ace3e9105feaa8702c23b204d1a4d.bindTooltip(
+                `<div>
+                     Region: East Asia<br>Year: 1998<br>Percentage Change: -77.50%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b94f984821def37f1a5412c60fb3be76 = L.marker(
+                [35.15177075, 122.591321],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_ce62d2ce04ba8f70e91f5ac9d1c66be7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_b94f984821def37f1a5412c60fb3be76.setIcon(icon_ce62d2ce04ba8f70e91f5ac9d1c66be7);
+        
+    
+            marker_b94f984821def37f1a5412c60fb3be76.bindTooltip(
+                `<div>
+                     Region: East Asia<br>Year: 1999<br>Percentage Change: -55.56%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_110f1f3aa63ed3bed91278476a5d765e = L.marker(
+                [34.236490526315784, 130.4666355263158],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_17482d779115e859a7b5edb3b0ac3d2a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_110f1f3aa63ed3bed91278476a5d765e.setIcon(icon_17482d779115e859a7b5edb3b0ac3d2a);
+        
+    
+            marker_110f1f3aa63ed3bed91278476a5d765e.bindTooltip(
+                `<div>
+                     Region: East Asia<br>Year: 2000<br>Percentage Change: 375.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8bf5213bc28264972ace24b1d768afc1 = L.marker(
+                [28.351247842105266, 116.47774199999999],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_ac2a00704f2d43b06045cdef50bb480d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_8bf5213bc28264972ace24b1d768afc1.setIcon(icon_ac2a00704f2d43b06045cdef50bb480d);
+        
+    
+            marker_8bf5213bc28264972ace24b1d768afc1.bindTooltip(
+                `<div>
+                     Region: East Asia<br>Year: 2001<br>Percentage Change: 0.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_769f95bdc5143fbb86f487a9d9c378c1 = L.marker(
+                [30.20108275, 127.03097774999999],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_142dd5423142f4aa370173ed3ba72248 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_769f95bdc5143fbb86f487a9d9c378c1.setIcon(icon_142dd5423142f4aa370173ed3ba72248);
+        
+    
+            marker_769f95bdc5143fbb86f487a9d9c378c1.bindTooltip(
+                `<div>
+                     Region: East Asia<br>Year: 2002<br>Percentage Change: -78.95%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ec98f468599e83383bbb2c3293b1cde9 = L.marker(
+                [34.849821, 124.32059550000001],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_467ec8c54a0a4dac6e3ca7a8b51b87d3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_ec98f468599e83383bbb2c3293b1cde9.setIcon(icon_467ec8c54a0a4dac6e3ca7a8b51b87d3);
+        
+    
+            marker_ec98f468599e83383bbb2c3293b1cde9.bindTooltip(
+                `<div>
+                     Region: East Asia<br>Year: 2003<br>Percentage Change: 50.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3cdaafcaa6604ecf4ff888dba85c80e7 = L.marker(
+                [26.328796, 117.346607],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_a81a1e2c923adf3fbfc0aa0ce1163810 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_3cdaafcaa6604ecf4ff888dba85c80e7.setIcon(icon_a81a1e2c923adf3fbfc0aa0ce1163810);
+        
+    
+            marker_3cdaafcaa6604ecf4ff888dba85c80e7.bindTooltip(
+                `<div>
+                     Region: East Asia<br>Year: 2004<br>Percentage Change: -33.33%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_17c118526f2cf4ee3cb961920d59200f = L.marker(
+                [33.930878, 99.5252665],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_a0f349b93c85a53d24d54760b27e7461 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_17c118526f2cf4ee3cb961920d59200f.setIcon(icon_a0f349b93c85a53d24d54760b27e7461);
+        
+    
+            marker_17c118526f2cf4ee3cb961920d59200f.bindTooltip(
+                `<div>
+                     Region: East Asia<br>Year: 2005<br>Percentage Change: -50.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_007aaba98653e2a34ffefd1d2b5d4ab5 = L.marker(
+                [37.566535, 126.977969],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_44a90abbd942ae8bff1b58c1c166f2ce = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_007aaba98653e2a34ffefd1d2b5d4ab5.setIcon(icon_44a90abbd942ae8bff1b58c1c166f2ce);
+        
+    
+            marker_007aaba98653e2a34ffefd1d2b5d4ab5.bindTooltip(
+                `<div>
+                     Region: East Asia<br>Year: 2006<br>Percentage Change: -50.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_db9821021ceeb2415cc283c8c86de667 = L.marker(
+                [33.7749898, 109.38991016],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_a4a7d264cfd33393290e315d813ab691 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_db9821021ceeb2415cc283c8c86de667.setIcon(icon_a4a7d264cfd33393290e315d813ab691);
+        
+    
+            marker_db9821021ceeb2415cc283c8c86de667.bindTooltip(
+                `<div>
+                     Region: East Asia<br>Year: 2008<br>Percentage Change: 2400.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_98709a9b52949bbcffbf099314251d67 = L.marker(
+                [33.86051725, 103.5168505],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_d3cf9869eca302ee2e3556fec7446223 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_98709a9b52949bbcffbf099314251d67.setIcon(icon_d3cf9869eca302ee2e3556fec7446223);
+        
+    
+            marker_98709a9b52949bbcffbf099314251d67.bindTooltip(
+                `<div>
+                     Region: East Asia<br>Year: 2009<br>Percentage Change: -68.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_01264c4b4e6a4abdd529a3562261755e = L.marker(
+                [41.168779, 80.260605],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_5de5015d8920af5509fc3a0ac92509a8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_01264c4b4e6a4abdd529a3562261755e.setIcon(icon_5de5015d8920af5509fc3a0ac92509a8);
+        
+    
+            marker_01264c4b4e6a4abdd529a3562261755e.bindTooltip(
+                `<div>
+                     Region: East Asia<br>Year: 2010<br>Percentage Change: -87.50%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_bc304524044f46e5a43429bfbd8fda64 = L.marker(
+                [37.38804225, 81.28532125000001],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_ad90522dce60cae8856b0819b43e314e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_bc304524044f46e5a43429bfbd8fda64.setIcon(icon_ad90522dce60cae8856b0819b43e314e);
+        
+    
+            marker_bc304524044f46e5a43429bfbd8fda64.bindTooltip(
+                `<div>
+                     Region: East Asia<br>Year: 2011<br>Percentage Change: 300.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_014735e33c0f3453d20c6429e74e8fbf = L.marker(
+                [35.054601, 84.616791],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_99f2b3cd501acc044b48a80584100e60 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_014735e33c0f3453d20c6429e74e8fbf.setIcon(icon_99f2b3cd501acc044b48a80584100e60);
+        
+    
+            marker_014735e33c0f3453d20c6429e74e8fbf.bindTooltip(
+                `<div>
+                     Region: East Asia<br>Year: 2012<br>Percentage Change: 0.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0197aa6ad905ac1abe3afa460309566a = L.marker(
+                [38.17184273333334, 97.67349213333333],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_3f5cbcf8b1bf584c04f7834339f84bf1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0197aa6ad905ac1abe3afa460309566a.setIcon(icon_3f5cbcf8b1bf584c04f7834339f84bf1);
+        
+    
+            marker_0197aa6ad905ac1abe3afa460309566a.bindTooltip(
+                `<div>
+                     Region: East Asia<br>Year: 2013<br>Percentage Change: 275.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_fc551d9346e03d3373115d40432c3363 = L.marker(
+                [38.326457348837216, 94.2878766976744],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_aff1e6a2a33bc1a5fbf61a3f560d5036 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_fc551d9346e03d3373115d40432c3363.setIcon(icon_aff1e6a2a33bc1a5fbf61a3f560d5036);
+        
+    
+            marker_fc551d9346e03d3373115d40432c3363.bindTooltip(
+                `<div>
+                     Region: East Asia<br>Year: 2014<br>Percentage Change: 186.67%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_23bdb7f79a48fa7f802f069268a5612b = L.marker(
+                [35.92497157142857, 109.9187622857143],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_ed6f8590e34454ee12c5dd9747696637 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_23bdb7f79a48fa7f802f069268a5612b.setIcon(icon_ed6f8590e34454ee12c5dd9747696637);
+        
+    
+            marker_23bdb7f79a48fa7f802f069268a5612b.bindTooltip(
+                `<div>
+                     Region: East Asia<br>Year: 2015<br>Percentage Change: -34.88%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e833692e8b303a9b3a6ccec415ff9db5 = L.marker(
+                [31.442799, 111.27716087500002],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_50005a528bce14368ff0d8a85706b8cf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e833692e8b303a9b3a6ccec415ff9db5.setIcon(icon_50005a528bce14368ff0d8a85706b8cf);
+        
+    
+            marker_e833692e8b303a9b3a6ccec415ff9db5.bindTooltip(
+                `<div>
+                     Region: East Asia<br>Year: 2016<br>Percentage Change: -71.43%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_69d63a48f0ae6e84e814f582ecd75599 = L.marker(
+                [26.721642285714285, 110.24874414285715],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_923d4a7942a44bf1795ebb206e4a346e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_69d63a48f0ae6e84e814f582ecd75599.setIcon(icon_923d4a7942a44bf1795ebb206e4a346e);
+        
+    
+            marker_69d63a48f0ae6e84e814f582ecd75599.bindTooltip(
+                `<div>
+                     Region: East Asia<br>Year: 2017<br>Percentage Change: -12.50%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_dbf0042d59879213a57127c7a388b7a1 = L.marker(
+                [28.585836, 77.153336],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_8c19e70d962044c146504c647241f815 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_dbf0042d59879213a57127c7a388b7a1.setIcon(icon_8c19e70d962044c146504c647241f815);
+        
+    
+            marker_dbf0042d59879213a57127c7a388b7a1.bindTooltip(
+                `<div>
+                     Region: South Asia<br>Year: 1972<br>Percentage Change: 0.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_497768045f0bbeed6f662426fdeec0c7 = L.marker(
+                [34.516895, 69.147011],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_6885057724f4f6b6149ca136e94f08f5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_497768045f0bbeed6f662426fdeec0c7.setIcon(icon_6885057724f4f6b6149ca136e94f08f5);
+        
+    
+            marker_497768045f0bbeed6f662426fdeec0c7.bindTooltip(
+                `<div>
+                     Region: South Asia<br>Year: 1973<br>Percentage Change: 0.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_179345228dac39b8d6716e06c127a700 = L.marker(
+                [29.448559499999998, 69.3403705],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_0738c330d5ffb9f2634dc744f41bba8f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_179345228dac39b8d6716e06c127a700.setIcon(icon_0738c330d5ffb9f2634dc744f41bba8f);
+        
+    
+            marker_179345228dac39b8d6716e06c127a700.bindTooltip(
+                `<div>
+                     Region: South Asia<br>Year: 1974<br>Percentage Change: 100.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f3f25a03f35d215c434ae98190c63160 = L.marker(
+                [25.782364499999996, 77.601997],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_54232ebd2c491080b91b42bc58142fcc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f3f25a03f35d215c434ae98190c63160.setIcon(icon_54232ebd2c491080b91b42bc58142fcc);
+        
+    
+            marker_f3f25a03f35d215c434ae98190c63160.bindTooltip(
+                `<div>
+                     Region: South Asia<br>Year: 1975<br>Percentage Change: 100.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5787a93f45204829a3682c2ae1c74aa2 = L.marker(
+                [30.882848000000003, 72.695572],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_d2599c152912bff8bf062d09ec90e463 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_5787a93f45204829a3682c2ae1c74aa2.setIcon(icon_d2599c152912bff8bf062d09ec90e463);
+        
+    
+            marker_5787a93f45204829a3682c2ae1c74aa2.bindTooltip(
+                `<div>
+                     Region: South Asia<br>Year: 1976<br>Percentage Change: 25.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ff2c0b1258be6f83e2159bfedb4d2083 = L.marker(
+                [20.70894, 82.3463865],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_f7202e60f0b301d9dacf1ec25ed040b8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_ff2c0b1258be6f83e2159bfedb4d2083.setIcon(icon_f7202e60f0b301d9dacf1ec25ed040b8);
+        
+    
+            marker_ff2c0b1258be6f83e2159bfedb4d2083.bindTooltip(
+                `<div>
+                     Region: South Asia<br>Year: 1977<br>Percentage Change: -60.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1cd482bc9ab9db38cedcc8eaadff5548 = L.marker(
+                [29.2813765, 70.0996895],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_e333efdfa7abfe30203dbf9ca2063e7f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_1cd482bc9ab9db38cedcc8eaadff5548.setIcon(icon_e333efdfa7abfe30203dbf9ca2063e7f);
+        
+    
+            marker_1cd482bc9ab9db38cedcc8eaadff5548.bindTooltip(
+                `<div>
+                     Region: South Asia<br>Year: 1978<br>Percentage Change: 0.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_dc5e2e335aa671e1ad343094b9b9156c = L.marker(
+                [25.600036303030304, 82.30226321212122],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_243eb076b25e06d8f1228c704d4b1d63 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_dc5e2e335aa671e1ad343094b9b9156c.setIcon(icon_243eb076b25e06d8f1228c704d4b1d63);
+        
+    
+            marker_dc5e2e335aa671e1ad343094b9b9156c.bindTooltip(
+                `<div>
+                     Region: South Asia<br>Year: 1979<br>Percentage Change: 1550.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_771b51ed8111336e855481994df1b969 = L.marker(
+                [24.991070636363634, 86.49342527272728],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_7778d0d9082e73ef2d9e26c34ddd4eb9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_771b51ed8111336e855481994df1b969.setIcon(icon_7778d0d9082e73ef2d9e26c34ddd4eb9);
+        
+    
+            marker_771b51ed8111336e855481994df1b969.bindTooltip(
+                `<div>
+                     Region: South Asia<br>Year: 1980<br>Percentage Change: -66.67%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_734df8855851ec849c3718fd9548ee95 = L.marker(
+                [24.563782409090912, 84.41793118181818],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_9fd1f4262ad4cd70c6b236dd6de72a9a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_734df8855851ec849c3718fd9548ee95.setIcon(icon_9fd1f4262ad4cd70c6b236dd6de72a9a);
+        
+    
+            marker_734df8855851ec849c3718fd9548ee95.bindTooltip(
+                `<div>
+                     Region: South Asia<br>Year: 1981<br>Percentage Change: 100.00%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a13576c2e0e612e83fe70f3b7589683f = L.marker(
+                [24.657628789473687, 80.0208142631579],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_d3cdfb29eae1af2e6fd429ca1ebdd2a0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a13576c2e0e612e83fe70f3b7589683f.setIcon(icon_d3cdfb29eae1af2e6fd429ca1ebdd2a0);
+        
+    
+            marker_a13576c2e0e612e83fe70f3b7589683f.bindTooltip(
+                `<div>
+                     Region: South Asia<br>Year: 1982<br>Percentage Change: -13.64%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4c8787691e4be2cc4664a1edfbde0bee = L.marker(
+                [26.859340854838702, 79.00580033870968],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_5a3b40cc5fc3930104d964b1a3c7565d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_4c8787691e4be2cc4664a1edfbde0bee.setIcon(icon_5a3b40cc5fc3930104d964b1a3c7565d);
+        
+    
+            marker_4c8787691e4be2cc4664a1edfbde0bee.bindTooltip(
+                `<div>
+                     Region: South Asia<br>Year: 1983<br>Percentage Change: 226.32%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3d85af99891401fd4a770fee217df71a = L.marker(
+                [23.479042078947355, 77.87984239912278],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_8135e642f0772f9938eefb525f6a632f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_3d85af99891401fd4a770fee217df71a.setIcon(icon_8135e642f0772f9938eefb525f6a632f);
+        
+    
+            marker_3d85af99891401fd4a770fee217df71a.bindTooltip(
+                `<div>
+                     Region: South Asia<br>Year: 1984<br>Percentage Change: 267.74%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b1925d8fbf0ed8794b72ce395fefff34 = L.marker(
+                [15.113018142857138, 80.1866490952381],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_51e87fa02f5565f6a59e151ffbbf3572 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_b1925d8fbf0ed8794b72ce395fefff34.setIcon(icon_51e87fa02f5565f6a59e151ffbbf3572);
+        
+    
+            marker_b1925d8fbf0ed8794b72ce395fefff34.bindTooltip(
+                `<div>
+                     Region: South Asia<br>Year: 1985<br>Percentage Change: -35.53%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1a5cf132f3eaedf7f7707ea420e38730 = L.marker(
+                [18.928732840909085, 78.28713409469697],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_732c01fe22336d9623ece9c861346116 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_1a5cf132f3eaedf7f7707ea420e38730.setIcon(icon_732c01fe22336d9623ece9c861346116);
+        
+    
+            marker_1a5cf132f3eaedf7f7707ea420e38730.bindTooltip(
+                `<div>
+                     Region: South Asia<br>Year: 1986<br>Percentage Change: 79.59%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_548894f1e4c2b5441d4810a198c6dc9d = L.marker(
+                [22.70987681449275, 77.69750814782607],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_60e604368cd231c5e315b01d9d4b0831 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_548894f1e4c2b5441d4810a198c6dc9d.setIcon(icon_60e604368cd231c5e315b01d9d4b0831);
+        
+    
+            marker_548894f1e4c2b5441d4810a198c6dc9d.bindTooltip(
+                `<div>
+                     Region: South Asia<br>Year: 1987<br>Percentage Change: 30.68%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_81d34e61730f7a780118eb675f8f4694 = L.marker(
+                [19.354707246298798, 79.31000520323013],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_7b1df69c03ff5766b14d0c7bd1b17728 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_81d34e61730f7a780118eb675f8f4694.setIcon(icon_7b1df69c03ff5766b14d0c7bd1b17728);
+        
+    
+            marker_81d34e61730f7a780118eb675f8f4694.bindTooltip(
+                `<div>
+                     Region: South Asia<br>Year: 1988<br>Percentage Change: 115.36%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_881823cdc03afe964745a48efe34ae79 = L.marker(
+                [16.70336076463836, 79.50707229965559],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_da1f5730081c55b0a6ccb3fe3b5216c0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_881823cdc03afe964745a48efe34ae79.setIcon(icon_da1f5730081c55b0a6ccb3fe3b5216c0);
+        
+    
+            marker_881823cdc03afe964745a48efe34ae79.bindTooltip(
+                `<div>
+                     Region: South Asia<br>Year: 1989<br>Percentage Change: 17.23%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9d68c0c02ce7d85cfa6a6883652eb3f7 = L.marker(
+                [25.035898197552466, 76.9212328706294],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_b35558f04c2f61950d3f2fe4be46340a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_9d68c0c02ce7d85cfa6a6883652eb3f7.setIcon(icon_b35558f04c2f61950d3f2fe4be46340a);
+        
+    
+            marker_9d68c0c02ce7d85cfa6a6883652eb3f7.bindTooltip(
+                `<div>
+                     Region: South Asia<br>Year: 1990<br>Percentage Change: -34.33%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_39c9268b6880297d958dbebcb3b2e41b = L.marker(
+                [25.275315168730668, 77.11840460835917],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_9f8e534cf706ba869a6152e36ac0963d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_39c9268b6880297d958dbebcb3b2e41b.setIcon(icon_9f8e534cf706ba869a6152e36ac0963d);
+        
+    
+            marker_39c9268b6880297d958dbebcb3b2e41b.bindTooltip(
+                `<div>
+                     Region: South Asia<br>Year: 1991<br>Percentage Change: 12.94%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4523d3d00bc5eaf4fcd2cb89c099f5d1 = L.marker(
+                [24.50467412284069, 78.3760404721689],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_3723d0040d300d7de746d12733897612 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_4523d3d00bc5eaf4fcd2cb89c099f5d1.setIcon(icon_3723d0040d300d7de746d12733897612);
+        
+    
+            marker_4523d3d00bc5eaf4fcd2cb89c099f5d1.bindTooltip(
+                `<div>
+                     Region: South Asia<br>Year: 1992<br>Percentage Change: -19.35%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1e164241a2b7d8c3f3b72a82f5521d80 = L.marker(
+                [24.541370284552794, 77.17637633875336],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_55216f7fdb0817f1fdfe212ba2cf9057 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_1e164241a2b7d8c3f3b72a82f5521d80.setIcon(icon_55216f7fdb0817f1fdfe212ba2cf9057);
+        
+    
+            marker_1e164241a2b7d8c3f3b72a82f5521d80.bindTooltip(
+                `<div>
+                     Region: South Asia<br>Year: 1994<br>Percentage Change: -29.17%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9c571f5ae787600dc962d6e689cae6e8 = L.marker(
+                [23.899412073501114, 72.45900898259183],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_2ad5e6ae4cc9d3ca9ab4cf3ce38957ca = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_9c571f5ae787600dc962d6e689cae6e8.setIcon(icon_2ad5e6ae4cc9d3ca9ab4cf3ce38957ca);
+        
+    
+            marker_9c571f5ae787600dc962d6e689cae6e8.bindTooltip(
+                `<div>
+                     Region: South Asia<br>Year: 1995<br>Percentage Change: 180.22%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_630b7e5b175e7447147cb6a75730da39 = L.marker(
+                [22.229550438122352, 79.98049567425319],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_189209f54db87e56759e51a3d9a1c3ed = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_630b7e5b175e7447147cb6a75730da39.setIcon(icon_189209f54db87e56759e51a3d9a1c3ed);
+        
+    
+            marker_630b7e5b175e7447147cb6a75730da39.bindTooltip(
+                `<div>
+                     Region: South Asia<br>Year: 1996<br>Percentage Change: -32.01%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_690125d9c4892cfdff0262a79ef067b0 = L.marker(
+                [25.143171732906005, 76.3015484615384],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_02758e1ae3d5cab40c5fba14ed074cc8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_690125d9c4892cfdff0262a79ef067b0.setIcon(icon_02758e1ae3d5cab40c5fba14ed074cc8);
+        
+    
+            marker_690125d9c4892cfdff0262a79ef067b0.bindTooltip(
+                `<div>
+                     Region: South Asia<br>Year: 1997<br>Percentage Change: -33.43%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0d52ce42323e86ea4032aa09c501d554 = L.marker(
+                [21.65379002857142, 77.94850502857145],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_fd1944f80520fa10f2bb0695139272fb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0d52ce42323e86ea4032aa09c501d554.setIcon(icon_fd1944f80520fa10f2bb0695139272fb);
+        
+    
+            marker_0d52ce42323e86ea4032aa09c501d554.bindTooltip(
+                `<div>
+                     Region: South Asia<br>Year: 1998<br>Percentage Change: -70.09%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b7fdfa66d371f17606b6c98463703d38 = L.marker(
+                [24.949204135593202, 79.26407115254237],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_cc9ba1dd88c4316da6dfba30dba96bf0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_b7fdfa66d371f17606b6c98463703d38.setIcon(icon_cc9ba1dd88c4316da6dfba30dba96bf0);
+        
+    
+            marker_b7fdfa66d371f17606b6c98463703d38.bindTooltip(
+                `<div>
+                     Region: South Asia<br>Year: 1999<br>Percentage Change: 68.57%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b35903c0715e7042018dea9d10ee3f02 = L.marker(
+                [24.75577185393259, 79.99821973033708],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_cb7c731ee385c0474f91b095a6819f5b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_b35903c0715e7042018dea9d10ee3f02.setIcon(icon_cb7c731ee385c0474f91b095a6819f5b);
+        
+    
+            marker_b35903c0715e7042018dea9d10ee3f02.bindTooltip(
+                `<div>
+                     Region: South Asia<br>Year: 2000<br>Percentage Change: 50.85%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e7e5e3381595658b3952c324433d2dd3 = L.marker(
+                [28.201393501291992, 77.7568725917313],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_d7c78efa252284a903836ead7691bd80 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_e7e5e3381595658b3952c324433d2dd3.setIcon(icon_d7c78efa252284a903836ead7691bd80);
+        
+    
+            marker_e7e5e3381595658b3952c324433d2dd3.bindTooltip(
+                `<div>
+                     Region: South Asia<br>Year: 2001<br>Percentage Change: 8.71%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_72ae922a1bb443320cce0aadb6489356 = L.marker(
+                [29.95701898525075, 76.98291308849552],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_9d181f9b5a267e2789e1db34808dff1e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_72ae922a1bb443320cce0aadb6489356.setIcon(icon_9d181f9b5a267e2789e1db34808dff1e);
+        
+    
+            marker_72ae922a1bb443320cce0aadb6489356.bindTooltip(
+                `<div>
+                     Region: South Asia<br>Year: 2002<br>Percentage Change: -12.40%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c8308a6242051ee2d271e00f1dc20b24 = L.marker(
+                [29.64392047042253, 75.29882612957744],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_6f74b7dabb6151c855e506542474d64e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_c8308a6242051ee2d271e00f1dc20b24.setIcon(icon_6f74b7dabb6151c855e506542474d64e);
+        
+    
+            marker_c8308a6242051ee2d271e00f1dc20b24.bindTooltip(
+                `<div>
+                     Region: South Asia<br>Year: 2003<br>Percentage Change: 4.72%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1025c5dd01023b07d8f7d8eb32293064 = L.marker(
+                [28.351221190476185, 75.95873705026452],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_3a9403f7d14654134c5897ffea843284 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_1025c5dd01023b07d8f7d8eb32293064.setIcon(icon_3a9403f7d14654134c5897ffea843284);
+        
+    
+            marker_1025c5dd01023b07d8f7d8eb32293064.bindTooltip(
+                `<div>
+                     Region: South Asia<br>Year: 2004<br>Percentage Change: 6.48%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8bb3c45abbd3ef18b94c5b8dedc95455 = L.marker(
+                [25.524710595673884, 76.08357117470882],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_31e5abc7309b084d700270acb6b1fa6e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_8bb3c45abbd3ef18b94c5b8dedc95455.setIcon(icon_31e5abc7309b084d700270acb6b1fa6e);
+        
+    
+            marker_8bb3c45abbd3ef18b94c5b8dedc95455.bindTooltip(
+                `<div>
+                     Region: South Asia<br>Year: 2005<br>Percentage Change: 58.99%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_fa0bd03a0a62c55a69f09ac57502195d = L.marker(
+                [25.45396755567229, 75.16356487815129],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_1c48dc9e35524d04284bf43e2989cb8b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_fa0bd03a0a62c55a69f09ac57502195d.setIcon(icon_1c48dc9e35524d04284bf43e2989cb8b);
+        
+    
+            marker_fa0bd03a0a62c55a69f09ac57502195d.bindTooltip(
+                `<div>
+                     Region: South Asia<br>Year: 2006<br>Percentage Change: 58.40%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_34e95159ea4317eadb061c88fd1174b2 = L.marker(
+                [28.166986832826765, 74.60571021276597],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_78a96ddefd87d625f846b915e155f181 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_34e95159ea4317eadb061c88fd1174b2.setIcon(icon_78a96ddefd87d625f846b915e155f181);
+        
+    
+            marker_34e95159ea4317eadb061c88fd1174b2.bindTooltip(
+                `<div>
+                     Region: South Asia<br>Year: 2007<br>Percentage Change: 3.68%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_61f0446c2f9a6e1e1be7ac2774f4b288 = L.marker(
+                [27.246545352106025, 75.69310880170389],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_a1233d9b982998edffb6c6057350431f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_61f0446c2f9a6e1e1be7ac2774f4b288.setIcon(icon_a1233d9b982998edffb6c6057350431f);
+        
+    
+            marker_61f0446c2f9a6e1e1be7ac2774f4b288.bindTooltip(
+                `<div>
+                     Region: South Asia<br>Year: 2008<br>Percentage Change: 114.08%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9358747820c599ceb5073f829230899b = L.marker(
+                [28.97714904869298, 75.91545548436703],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_197ef6fde98ac9e81a0e64b8a3560947 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_9358747820c599ceb5073f829230899b.setIcon(icon_197ef6fde98ac9e81a0e64b8a3560947);
+        
+    
+            marker_9358747820c599ceb5073f829230899b.bindTooltip(
+                `<div>
+                     Region: South Asia<br>Year: 2009<br>Percentage Change: -7.67%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b37405cfdaecb22b4f2dd2d6435d6ce1 = L.marker(
+                [29.032402566666647, 74.94266494949501],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_c1f5595f4275dba3e5f45b73af817cd6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_b37405cfdaecb22b4f2dd2d6435d6ce1.setIcon(icon_c1f5595f4275dba3e5f45b73af817cd6);
+        
+    
+            marker_b37405cfdaecb22b4f2dd2d6435d6ce1.bindTooltip(
+                `<div>
+                     Region: South Asia<br>Year: 2010<br>Percentage Change: 1.49%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8e30b08797b6a02ea3fbdf7866c78bed = L.marker(
+                [29.026529763542136, 74.42518102779081],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_824c6c2e508804a45ff7fb97b4e6ae8f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_8e30b08797b6a02ea3fbdf7866c78bed.setIcon(icon_824c6c2e508804a45ff7fb97b4e6ae8f);
+        
+    
+            marker_8e30b08797b6a02ea3fbdf7866c78bed.bindTooltip(
+                `<div>
+                     Region: South Asia<br>Year: 2011<br>Percentage Change: 7.22%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_55f72466452b3b57e5acf239bc85eb5b = L.marker(
+                [30.861619742736362, 71.52640866059185],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_7bfc1eb4e8df727e2876734e16acb448 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_55f72466452b3b57e5acf239bc85eb5b.setIcon(icon_7bfc1eb4e8df727e2876734e16acb448);
+        
+    
+            marker_55f72466452b3b57e5acf239bc85eb5b.bindTooltip(
+                `<div>
+                     Region: South Asia<br>Year: 2012<br>Percentage Change: 78.33%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a47667ba79f48deb534459c51c703fab = L.marker(
+                [30.297147096296225, 72.05127476710214],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_e3230b85ab9c4f69fe6debe41b71536f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a47667ba79f48deb534459c51c703fab.setIcon(icon_e3230b85ab9c4f69fe6debe41b71536f);
+        
+    
+            marker_a47667ba79f48deb534459c51c703fab.bindTooltip(
+                `<div>
+                     Region: South Asia<br>Year: 2013<br>Percentage Change: 21.24%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f83912c62b7885c1e6c8d93106e5efaf = L.marker(
+                [30.376326552758695, 71.8537786028996],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_9862b049eb338b0d21720d70178d1c5b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f83912c62b7885c1e6c8d93106e5efaf.setIcon(icon_9862b049eb338b0d21720d70178d1c5b);
+        
+    
+            marker_f83912c62b7885c1e6c8d93106e5efaf.bindTooltip(
+                `<div>
+                     Region: South Asia<br>Year: 2014<br>Percentage Change: 8.19%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_878c691c4eb7f7061f99b037ff577e86 = L.marker(
+                [29.86340675727728, 73.5587142048588],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_e266fe1bf9dbfe9d5e5a6e3f15df2ddf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_878c691c4eb7f7061f99b037ff577e86.setIcon(icon_e266fe1bf9dbfe9d5e5a6e3f15df2ddf);
+        
+    
+            marker_878c691c4eb7f7061f99b037ff577e86.bindTooltip(
+                `<div>
+                     Region: South Asia<br>Year: 2015<br>Percentage Change: -7.99%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_78904bc9cd581f9635ede7effc591956 = L.marker(
+                [30.29651379834939, 72.91359381623101],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_d78c3c608f9315c881adc0b0fcb9a6b2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_78904bc9cd581f9635ede7effc591956.setIcon(icon_d78c3c608f9315c881adc0b0fcb9a6b2);
+        
+    
+            marker_78904bc9cd581f9635ede7effc591956.bindTooltip(
+                `<div>
+                     Region: South Asia<br>Year: 2016<br>Percentage Change: -20.44%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_03bf7d12d50006b68add5f890e0b293a = L.marker(
+                [30.174519166228475, 73.71447821676884],
+                {
+}
+            ).addTo(map_cf7ea63140f24178d924518a03262791);
+        
+    
+            var icon_7efc4563c13799a0bbe5754dd59f7350 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_03bf7d12d50006b68add5f890e0b293a.setIcon(icon_7efc4563c13799a0bbe5754dd59f7350);
+        
+    
+            marker_03bf7d12d50006b68add5f890e0b293a.bindTooltip(
+                `<div>
+                     Region: South Asia<br>Year: 2017<br>Percentage Change: -5.83%
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
