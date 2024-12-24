@@ -4,7 +4,7 @@ from api_request_news.app.db.database import elastic_client
 
 
 def insert_to_elasticsearch(data):
-    bulk(elastic_client, data)
+    elastic_client.index(index="terror_data", body=data)
 
 
 def init_elastic():

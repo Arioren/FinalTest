@@ -73,7 +73,7 @@ if __name__ == '__main__':
         "country": item["country"],
         "city": item["city"],
         "type": item["type"],
-        "source": item["source"],
+        "source": 'news',
         "latitude": item["latitude"],
         "longitude": item["longitude"]
     })
