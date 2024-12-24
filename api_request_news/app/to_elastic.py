@@ -18,12 +18,9 @@ def init_elastic():
        },
        "mappings": {
         "properties": {
-            "latitude": {"type": "geo_point"},
-            "longitude": {"type": "geo_point"},
-            "date": {
-                "type": "date",
-                "format": "yyyy-MM-dd"
-            },
+            "latitude": {"type": "text"},
+            "longitude": {"type": "text"},
+            "date": {"type": "text"},
             "description": {
                 "type": "text",
                 "analyzer": "standard"

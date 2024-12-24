@@ -3,6 +3,9 @@ import folium
 import os
 import pandas as pd
 
+file_path = r"/app/templates/display_percentage_change_on_map_path.html"
+
+
 def get_marker_color(fatal_avg: float) -> str:
     if fatal_avg < 1:
         return "green"
@@ -16,6 +19,8 @@ def get_marker_color(fatal_avg: float) -> str:
         return "red"
     else:
         return "black"
+map_of_average_casualties_path = r'C:\Users\ARI\PycharmProjects\FinalTest\first_half\app\templates\map_of_average_casualties_path.html'
+display_percentage_change_on_map_path = r'C:\Users\ARI\PycharmProjects\FinalTest\first_half\app\templates\display_percentage_change_on_map_path.html'
 
 
 def map_of_average_casualties(res: List[dict]) -> folium.Map:
@@ -32,9 +37,7 @@ def map_of_average_casualties(res: List[dict]) -> folium.Map:
             icon=folium.Icon(color=marker_color),
         ).add_to(main_map)
 
-    save_path = r"C:\Users\ARI\PycharmProjects\FinalTest\htmls\map.html"
-    os.remove(save_path)
-    main_map.save(save_path)
+    main_map.save(map_of_average_casualties_path)
 
     return main_map
 
@@ -54,7 +57,6 @@ def display_percentage_change_on_map(df: pd.DataFrame) -> folium.Map:
             icon=folium.Icon(color="blue" if row["percentage_change"] > 0 else "red"),
         ).add_to(main_map)
 
-    save_path = r"C:\Users\ARI\PycharmProjects\FinalTest\htmls\map.html"
-    main_map.save(save_path)
+    main_map.save(display_percentage_change_on_map_path)
 
     return main_map

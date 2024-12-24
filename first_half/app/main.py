@@ -1,6 +1,6 @@
-from flask import Flask, render_template
+from flask import Flask
 
-from app.routs.queries import terror_bluprint
+from first_half.app.routs.queries import terror_bluprint
 
 app = Flask(__name__)
 

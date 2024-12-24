@@ -1,7 +1,7 @@
 from sqlalchemy import func
 import pandas as pd
-from app.db.database import session_maker
-from app.db.model import Event, Casualties, AttackType, Region, Location
+from first_half.app.db.database import session_maker
+from first_half.app.db.model import Event, Casualties, AttackType, Region, Location
 
 # 1
 def deadliest_attack_types(filter_option="Top 5"):

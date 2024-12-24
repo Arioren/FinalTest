@@ -1,5 +1,5 @@
-from app.db.database import session_maker, engine
-from app.db.model import TargetType, AttackType, Country, Region, City, Location, Casualties, Event, Base
+from first_half.app.db.database import session_maker, engine
+from first_half.app.db.model import TargetType, AttackType, Country, Region, City, Location, Casualties, Event, Base
 import csv
 
 
@@ -116,4 +116,4 @@ def read_csv_data(file_path):
 
 
 if __name__ == '__main__':
-    read_csv_data(r'C:\Users\ARI\PycharmProjects\FinalTest\data\merge.csv')
+    read_csv_data(r'/data/merge.csv')
