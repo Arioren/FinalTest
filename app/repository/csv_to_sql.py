@@ -34,6 +34,7 @@ def read_csv_data(file_path):
                 year, month, day = line[1], line[2], line[3]
                 gang_name = line[58]
                 total_terrorists = int(float(line[69])) if line[69] and int(float(line[69])) >= 0 else None
+                description = line[18]
 
                 if target_name not in target_cache:
                     target = TargetType(name=target_name)
@@ -101,6 +102,7 @@ def read_csv_data(file_path):
                     attack_type_id=attack_cache[attack_name],
                     target_type_id=target_cache[target_name],
                     casualties_id=casualties.id,
+                    description=description
                 )
                 events.append(event)
                 if i % 500 == 0:

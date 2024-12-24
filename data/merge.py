@@ -19,10 +19,10 @@ def fix_year(date_str):
 
 data2['Date'] = data2['Date'].apply(fix_year).dt.strftime('%Y-%m-%d')
 
-data2_renamed = data2.rename(columns={'Country': 'country_txt', 'City': 'city', 'Date': 'date_full', 'Injuries': 'injuries', 'Fatalities': 'fatalities'})
+data2_renamed = data2.rename(columns={'Country': 'country_txt', 'City': 'city', 'Date': 'date_full', 'Injuries': 'injuries', 'Fatalities': 'fatalities', 'Description': 'description'})
 
 merged_data = data1.merge(
-    data2_renamed[['country_txt', 'city', 'date_full', 'injuries', 'fatalities']],
+    data2_renamed[['country_txt', 'city', 'date_full', 'injuries', 'fatalities', 'description']],
     on=['country_txt', 'city', 'date_full'],
     how='left',
     suffixes=('', '_new')
@@ -40,12 +40,19 @@ merged_data['nwound'] = np.where(
     merged_data['nwound']
 )
 
-merged_data.drop(columns=['fatalities', 'injuries', 'date_full'], inplace=True)
+
+merged_data['summary'] = np.where(
+    merged_data['summary'].isna(),
+    merged_data['description'],
+    merged_data['summary'])
+
+merged_data.drop(columns=['fatalities', 'injuries', 'date_full', 'description'], inplace=True)
 
 merged_data.to_csv(r'C:\Users\ARI\PycharmProjects\FinalTest\data\merge.csv', index=False)
 
 print("Added missing values in 'nkill':", data1['nkill'].isna().sum() - merged_data['nkill'].isna().sum())
 print("Added missing values in 'nwound':", data1['nwound'].isna().sum() - merged_data['nwound'].isna().sum())
+print("Added missing values in 'summary':", data1['summary'].isna().sum() - merged_data['summary'].isna().sum())
 
 
 

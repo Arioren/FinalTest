@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String, Boolean, ForeignKey
+from sqlalchemy import Column, Integer, String, ForeignKey
 from sqlalchemy.orm import relationship
 from app.db.model import Base
 
@@ -11,6 +11,7 @@ class Event(Base):
     day = Column(Integer, nullable=True)
     gang_name = Column(String, nullable=True)
     total_terrorists = Column(Integer, nullable=True)
+    description = Column(String, nullable=True)
     attack_type_id = Column(Integer, ForeignKey('attack_types.id'), nullable=False)
     target_type_id = Column(Integer, ForeignKey('target_types.id'), nullable=False)
     casualties_id = Column(Integer, ForeignKey('casualties.id'), nullable=False)

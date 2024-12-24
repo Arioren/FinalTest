@@ -17,15 +17,21 @@ def init_elastic():
            "number_of_replicas": 2
        },
        "mappings": {
-           "properties": {
-               "latitude": {"type": "text"},
-               "longitude": {"type": "text"},
-               "date": {"type": "date", "format": "yyyy-MM-dd"},
-               "description": {"type": "text"},
-               'country': {"type": "text"},
-               'city': {"type": "text"},
-               'type': {"type": "text"},
-               'source': {"type": "text"}
-           }
+        "properties": {
+            "latitude": {"type": "geo_point"},
+            "longitude": {"type": "geo_point"},
+            "date": {
+                "type": "date",
+                "format": "yyyy-MM-dd"
+            },
+            "description": {
+                "type": "text",
+                "analyzer": "standard"
+            },
+            "country": {"type": "keyword"},
+            "city": {"type": "keyword"},
+            "type": {"type": "keyword"},
+            "source": {"type": "keyword"}
+        }
        }
     })

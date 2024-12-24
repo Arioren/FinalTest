@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, Boolean, Float
+from sqlalchemy import Column, Integer
 from sqlalchemy.orm import relationship
 from app.db.model import Base
 
